@@ -1,0 +1,442 @@
+@import "./variable";
+@import "./mixin";
+// Start Banner
+.banner {
+  .banner-carousel {
+    height: 100%;
+    .banner-item {
+      height: 100vh;
+      position: relative;
+      .img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .layer {
+          height: 100%;
+          width: 100%;
+          color: transparent;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: all 0.3s;
+        }
+      }
+      .content-text {
+        height: 100%;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transition: all 0.3s;
+        opacity: 0;
+        .title {
+          text-align: center;
+          line-height: 1.1;
+          font-weight: bold;
+          font-size: 60px;
+          margin-bottom: 9px;
+        }
+        .scroll-more {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 6px;
+          cursor: pointer;
+          p {
+            font-size: 16px;
+            font-weight: 400;
+          }
+          img {
+            width: 19.2px;
+            object-fit: contain;
+          }
+        }
+        .disc {
+          position: absolute;
+          bottom: 24px;
+          left: 0;
+          width: 100%;
+          max-width: 100%;
+          margin: 0 auto;
+          text-align: center;
+          font-size: 18px;
+          line-height: 1.2;
+          p {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .slick-next {
+      right: 24px;
+    }
+    .slick-prev {
+      left: 24px;
+    }
+    .slick-next,
+    .slick-prev {
+      z-index: 10;
+      &::before {
+        display: none;
+      }
+    }
+    &:hover {
+      .img {
+        .layer {
+          background-color: #00000070;
+        }
+      }
+      .content-text {
+        opacity: 1;
+      }
+    }
+  }
+}
+// End Banner
+
+// Start List Product
+.list-product {
+  padding-top: 48px;
+  margin-bottom: 48px;
+  .title {
+    margin-bottom: 50px;
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  .card-title {
+    color: white;
+  }
+  .list-product-type {
+    .row {
+      --bs-gutter-x: 24px;
+      --bs-gutter-y: 24px;
+    }
+    .product-type-item {
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .card-title {
+        position: absolute;
+        bottom: 0;
+        left: 12px;
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 24px);
+        padding: 20.5px 20px;
+        a {
+          opacity: 0;
+          border-radius: 50%;
+          width: 35px;
+          aspect-ratio: 1/1;
+          border: 1px solid transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s;
+          img {
+            width: 16.8px;
+            transition: all 0.3s;
+          }
+          &:hover {
+            background-color: $orangeColor;
+            border: 1px solid $orangeColor !important;
+          }
+        }
+      }
+      &:hover {
+        .card-title {
+          a {
+            opacity: 1;
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+  }
+}
+// End List Product
+
+// Start Short Intro
+.short-intro {
+  background-image: url("./../assets/img/background/home-s3.jpeg");
+  padding: 36px 0;
+  h2 {
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .content {
+    align-items: center;
+  }
+}
+// End Short Intro
+
+// Start Traceble
+.traceable {
+  padding: 36px 0;
+  h2 {
+    margin-bottom: 24px;
+  }
+  .container-1152 > .row {
+    --bs-gutter-x: 0;
+  }
+  .traceable-for {
+    max-height: calc(116.5px * 4);
+    overflow: hidden;
+    div {
+      height: 100%;
+    }
+    .item {
+      position: relative;
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s;
+      }
+      .card-title {
+        opacity: 0;
+        transition: all 0.3s;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: max-content;
+        padding: 24px;
+        color: white;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.645) 80%
+        );
+        a {
+          @include a-tag-card-title(30px, 14.4px);
+        }
+      }
+      &:hover {
+        & > img {
+          transform: scale(1.05);
+        }
+        .card-title {
+          opacity: 1;
+          a {
+            opacity: 1;
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+  }
+  .traceable-carousel {
+    .item > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .slick-slide {
+      height: 116.5px;
+      border: unset;
+
+      & div {
+        height: 100%;
+      }
+    }
+  }
+}
+// End Traceble
+
+// Start Certificates
+.certifications {
+  overflow: hidden;
+  position: relative;
+  padding: 24px 0 48px 0;
+  h2 {
+    margin-bottom: 24px;
+  }
+  &::before {
+    content: "";
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 144px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  &::after {
+    content: "";
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 144px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .slick-slide {
+    img {
+      width: 100%;
+    }
+    .item {
+      aspect-ratio: 1/1;
+    }
+  }
+}
+// End Certificates
+
+@media only screen and (max-width: 1279.98px) {
+  .banner {
+    .banner-carousel {
+      .banner-item {
+        height: 60vh;
+        .content-text {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .list-product {
+    .list-product-type {
+      .row {
+        --bs-gutter-x: 12px;
+        --bs-gutter-y: 12px;
+      }
+      .product-type-item {
+        .card-title {
+          align-items: flex-end;
+          a {
+            height: 35px;
+            opacity: 1;
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+  }
+  .traceable {
+    .traceable-carousel {
+      .item {
+        & > img {
+          object-fit: fill;
+        }
+      }
+    }
+    .traceable-for {
+      .item {
+        .card-title {
+          opacity: 1;
+          & a {
+            opacity: 1;
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .banner {
+    .banner-carousel {
+      .slick-arrow {
+        img {
+          width: 10px;
+        }
+      }
+      .slick-next {
+        right: 15px;
+      }
+      .slick-prev {
+        left: 15px;
+      }
+      .banner-item {
+        height: calc(100vh - 72.45px);
+        .content-text {
+          .title {
+            font-size: 30px;
+          }
+          .scroll-more {
+            p {
+              font-size: 14px;
+            }
+            img {
+              width: 13.2px;
+            }
+          }
+          .disc {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .list-product {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    .title {
+      margin-bottom: 30px;
+    }
+    .list-product-type {
+      .product-type-item {
+        width: 50%;
+        .card-title {
+          padding: 10px 0;
+          a {
+            height: 25px;
+            width: 25px;
+            img {
+              width: 10.8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .short-intro {
+    .content {
+      gap: 20px;
+    }
+  }
+  .certifications {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .certifications::after {
+    width: 50px;
+  }
+}
+.active_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: block;
+  width: 4px;
+  transition: all 0.5s;
+}

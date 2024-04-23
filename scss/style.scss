@@ -1,0 +1,121 @@
+@import "./variable";
+@import "./components";
+//================= reset css =================
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: $textNormal;
+  max-width: 1920px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin-bottom: 0;
+}
+//=================  Container =================
+.container-1152 {
+  width: 100%;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+main {
+  padding-top: 105px;
+}
+
+//=================  Text =================
+h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: $orangeColor;
+}
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+  color: $orangeColor;
+}
+h3 {
+  font-weight: 500;
+  font-size: 24px;
+  color: $orangeColor;
+}
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.card-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+//=================  Breadcumbs =================
+.breadcrumb {
+  margin: 36px 0 24px 0;
+  .breadcrumb-item {
+    font-size: 14px;
+    color: $textNormal40;
+    &.active {
+      color: $orangeColor;
+      font-weight: bold;
+    }
+  }
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: $textNormal40;
+  content: var(--bs-breadcrumb-divider, ">");
+}
+
+//=================  RESPONSIVE =================
+@media only screen and (max-width: 1279.98px) {
+  .container-1152 {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  main {
+    padding-top: 72.45px;
+  }
+  h1 {
+    font-size: 25.35px;
+  }
+  h2 {
+    font-size: 22.53px;
+  }
+  h3 {
+    font-size: 16.9px;
+  }
+  h5 {
+    font-size: 11.2px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .card-title {
+    font-size: 19.7px;
+  }
+  .breadcrumb {
+    .breadcrumb-item {
+      font-size: 11px;
+    }
+  }
+}

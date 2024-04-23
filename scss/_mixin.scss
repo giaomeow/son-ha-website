@@ -1,0 +1,47 @@
+@import "./variable";
+@mixin a-tag-card-title($widthA, $widthArrows) {
+  opacity: 0;
+  border-radius: 50%;
+  width: $widthA;
+  aspect-ratio: 1/1;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  img {
+    width: $widthArrows;
+    transition: all 0.3s;
+  }
+  &:hover {
+    background-color: $orangeColor;
+    border: 1px solid $orangeColor !important;
+  }
+}
+@mixin a-link-arrow($widthA, $widthArrows, $borderColor: "transparent") {
+  border-radius: 50%;
+  width: $widthA;
+  aspect-ratio: 1/1;
+  border: 1px solid $borderColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  img,
+  svg {
+    width: $widthArrows;
+    transition: all 0.3s;
+  }
+}
+@mixin a-header-style {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  padding: 0 !important;
+  transition: all 0.3s;
+}
+
+@mixin hover-a {
+  background-color: $orangeColor;
+  border: 1px solid $orangeColor;
+}

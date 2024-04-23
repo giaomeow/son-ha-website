@@ -1,0 +1,64 @@
+h2 {
+  margin-bottom: 36px;
+}
+
+.list-certifications {
+  margin-bottom: 37px;
+}
+.list-certifications .logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  transition: all 0.3s;
+  margin-bottom: 36px;
+}
+.list-certifications .logos .item {
+  filter: grayscale(1);
+  border: 1px solid #adadad;
+}
+.list-certifications .logos .item img {
+  width: 100%;
+}
+.list-certifications .logos .item:hover {
+  filter: unset;
+  border: 1px solid #ea6f18;
+}
+.list-certifications .list-text .list-1 {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 24px;
+  margin-bottom: 12px;
+}
+.list-certifications .list-text .list-1 p {
+  font-weight: bold;
+  color: #ea6f18;
+  text-align: center;
+  line-height: 36px;
+}
+.list-certifications .list-text .list-2 {
+  text-align: center;
+  line-height: 1.5;
+}
+.list-certifications .list-text .list-2 span {
+  color: #ea6f18;
+}
+
+@media only screen and (max-width: 767.97px) {
+  h2 {
+    margin-bottom: 20px;
+  }
+  .list-certifications {
+    margin-bottom: 20px;
+  }
+  .list-certifications .logos {
+    margin-bottom: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .list-certifications .list-text .list-1 {
+    width: 100%;
+  }
+  .list-certifications .list-text .list-1 p {
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,143 @@
+.mission {
+  margin-bottom: 60px;
+}
+.mission h1 {
+  margin-bottom: 12px;
+}
+.mission h3 {
+  margin-bottom: 24px;
+}
+
+.spice-excellence {
+  background-color: #f1f1f1;
+  padding: 36px 0;
+}
+.spice-excellence h2 {
+  margin-bottom: 24px;
+}
+.spice-excellence .tabs-content {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.spice-excellence .tabs-content .nav-tabs {
+  border-bottom: 2px solid #ea6f18;
+  background-color: #fff;
+}
+.spice-excellence .tabs-content .nav-link {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  color: #444444;
+  transition: all 0.3s;
+  border: unset;
+  border-bottom: 3px solid transparent;
+}
+.spice-excellence .tabs-content .nav-link.active {
+  background-color: transparent;
+  border: unset;
+  border-bottom: 3px solid #ea6f18;
+  font-weight: bold;
+  color: #ea6f18;
+}
+.spice-excellence .tabs-content .nav-link:hover {
+  border-bottom: 3px solid #ea6f18;
+}
+.spice-excellence .tabs-content .tab-content {
+  padding: 12px 12px 24px 12px;
+  background-color: #fff;
+}
+.spice-excellence .tabs-content .tab-content .row {
+  width: 100%;
+  align-items: center;
+  margin-left: unset;
+}
+
+.minimize-risk {
+  padding: 36px 0 60px 0;
+}
+.minimize-risk h2 {
+  margin-bottom: 24px;
+}
+
+.sun-kissed {
+  padding: 36px 0;
+  background-color: #f1f1f1;
+}
+.sun-kissed .carousel {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.sun-kissed .content {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: hsla(0, 0%, 100%, 0.9);
+}
+.sun-kissed .content h2 {
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 1023.98px) {
+  .mission .content {
+    margin-bottom: 20px;
+  }
+  .spice-excellence .tabs-content .nav-link {
+    text-align: center;
+  }
+  .spice-excellence .tabs-content .tab-pane > .row {
+    gap: 20px;
+  }
+  .spice-excellence .tabs-content .tab-pane > .row > .col-6 {
+    width: 100%;
+  }
+  .minimize-risk .img {
+    margin-bottom: 20px;
+  }
+  .sun-kissed .content {
+    width: 50%;
+    padding: 0 7px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .mission {
+    margin-bottom: 30px;
+  }
+  .spice-excellence {
+    padding: 30px 0;
+  }
+  .spice-excellence .container-1152 {
+    padding: 0;
+  }
+  .spice-excellence h2 {
+    margin-bottom: 20px;
+  }
+  .spice-excellence h4 {
+    font-size: 12px;
+  }
+  .spice-excellence .tabs-content .tab-content {
+    padding: 12px 0;
+  }
+  .minimize-risk {
+    padding: 30px 0;
+  }
+  .minimize-risk h2 {
+    margin-bottom: 20px;
+  }
+  .sun-kissed .content {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent !important;
+    padding: 0;
+  }
+}

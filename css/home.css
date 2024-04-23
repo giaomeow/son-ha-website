@@ -1,0 +1,389 @@
+.banner .banner-carousel {
+  height: 100%;
+}
+.banner .banner-carousel .banner-item {
+  height: 100vh;
+  position: relative;
+}
+.banner .banner-carousel .banner-item .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner .banner-carousel .banner-item .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .banner-carousel .banner-item .img .layer {
+  height: 100%;
+  width: 100%;
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+.banner .banner-carousel .banner-item .content-text {
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.banner .banner-carousel .banner-item .content-text .title {
+  text-align: center;
+  line-height: 1.1;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 9px;
+}
+.banner .banner-carousel .banner-item .content-text .scroll-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.banner .banner-carousel .banner-item .content-text .scroll-more p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.banner .banner-carousel .banner-item .content-text .scroll-more img {
+  width: 19.2px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.banner .banner-carousel .banner-item .content-text .disc {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.banner .banner-carousel .banner-item .content-text .disc p {
+  cursor: pointer;
+}
+.banner .banner-carousel .slick-next {
+  right: 24px;
+}
+.banner .banner-carousel .slick-prev {
+  left: 24px;
+}
+.banner .banner-carousel .slick-next,
+.banner .banner-carousel .slick-prev {
+  z-index: 10;
+}
+.banner .banner-carousel .slick-next::before,
+.banner .banner-carousel .slick-prev::before {
+  display: none;
+}
+.banner .banner-carousel:hover .img .layer {
+  background-color: rgba(0, 0, 0, 0.4392156863);
+}
+.banner .banner-carousel:hover .content-text {
+  opacity: 1;
+}
+
+.list-product {
+  padding-top: 48px;
+  margin-bottom: 48px;
+}
+.list-product .title {
+  margin-bottom: 50px;
+}
+.list-product .title h2 {
+  margin-bottom: 10px;
+}
+.list-product .card-title {
+  color: white;
+}
+.list-product .list-product-type .row {
+  --bs-gutter-x: 24px;
+  --bs-gutter-y: 24px;
+}
+.list-product .list-product-type .product-type-item {
+  position: relative;
+}
+.list-product .list-product-type .product-type-item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.list-product .list-product-type .product-type-item .card-title {
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 24px);
+  padding: 20.5px 20px;
+}
+.list-product .list-product-type .product-type-item .card-title a {
+  opacity: 0;
+  border-radius: 50%;
+  width: 35px;
+  aspect-ratio: 1/1;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.list-product .list-product-type .product-type-item .card-title a img {
+  width: 16.8px;
+  transition: all 0.3s;
+}
+.list-product .list-product-type .product-type-item .card-title a:hover {
+  background-color: #ea6f18;
+  border: 1px solid #ea6f18 !important;
+}
+.list-product .list-product-type .product-type-item:hover .card-title a {
+  opacity: 1;
+  border: 1px solid white;
+}
+
+.short-intro {
+  background-image: url("./../assets/img/background/home-s3.jpeg");
+  padding: 36px 0;
+}
+.short-intro h2 {
+  margin-bottom: 36px;
+  text-align: center;
+}
+.short-intro .content {
+  align-items: center;
+}
+
+.traceable {
+  padding: 36px 0;
+}
+.traceable h2 {
+  margin-bottom: 24px;
+}
+.traceable .container-1152 > .row {
+  --bs-gutter-x: 0;
+}
+.traceable .traceable-for {
+  max-height: 466px;
+  overflow: hidden;
+}
+.traceable .traceable-for div {
+  height: 100%;
+}
+.traceable .traceable-for .item {
+  position: relative;
+}
+.traceable .traceable-for .item > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s;
+}
+.traceable .traceable-for .item .card-title {
+  opacity: 0;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 24px;
+  color: white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.645) 80%);
+}
+.traceable .traceable-for .item .card-title a {
+  opacity: 0;
+  border-radius: 50%;
+  width: 30px;
+  aspect-ratio: 1/1;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.traceable .traceable-for .item .card-title a img {
+  width: 14.4px;
+  transition: all 0.3s;
+}
+.traceable .traceable-for .item .card-title a:hover {
+  background-color: #ea6f18;
+  border: 1px solid #ea6f18 !important;
+}
+.traceable .traceable-for .item:hover > img {
+  transform: scale(1.05);
+}
+.traceable .traceable-for .item:hover .card-title {
+  opacity: 1;
+}
+.traceable .traceable-for .item:hover .card-title a {
+  opacity: 1;
+  border: 1px solid white;
+}
+.traceable .traceable-carousel .item > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.traceable .traceable-carousel .slick-slide {
+  height: 116.5px;
+  border: unset;
+}
+.traceable .traceable-carousel .slick-slide div {
+  height: 100%;
+}
+
+.certifications {
+  overflow: hidden;
+  position: relative;
+  padding: 24px 0 48px 0;
+}
+.certifications h2 {
+  margin-bottom: 24px;
+}
+.certifications::before {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 144px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.certifications::after {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 144px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(270deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.certifications .slick-slide img {
+  width: 100%;
+}
+.certifications .slick-slide .item {
+  aspect-ratio: 1/1;
+}
+
+@media only screen and (max-width: 1279.98px) {
+  .banner .banner-carousel .banner-item {
+    height: 60vh;
+  }
+  .banner .banner-carousel .banner-item .content-text {
+    opacity: 1;
+  }
+  .list-product .list-product-type .row {
+    --bs-gutter-x: 12px;
+    --bs-gutter-y: 12px;
+  }
+  .list-product .list-product-type .product-type-item .card-title {
+    align-items: flex-end;
+  }
+  .list-product .list-product-type .product-type-item .card-title a {
+    height: 35px;
+    opacity: 1;
+    border: 1px solid white;
+  }
+  .traceable .traceable-carousel .item > img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .traceable .traceable-for .item .card-title {
+    opacity: 1;
+  }
+  .traceable .traceable-for .item .card-title a {
+    opacity: 1;
+    border: 1px solid white;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .banner .banner-carousel .slick-arrow img {
+    width: 10px;
+  }
+  .banner .banner-carousel .slick-next {
+    right: 15px;
+  }
+  .banner .banner-carousel .slick-prev {
+    left: 15px;
+  }
+  .banner .banner-carousel .banner-item {
+    height: calc(100vh - 72.45px);
+  }
+  .banner .banner-carousel .banner-item .content-text .title {
+    font-size: 30px;
+  }
+  .banner .banner-carousel .banner-item .content-text .scroll-more p {
+    font-size: 14px;
+  }
+  .banner .banner-carousel .banner-item .content-text .scroll-more img {
+    width: 13.2px;
+  }
+  .banner .banner-carousel .banner-item .content-text .disc {
+    font-size: 14px;
+  }
+  .list-product {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .list-product .title {
+    margin-bottom: 30px;
+  }
+  .list-product .list-product-type .product-type-item {
+    width: 50%;
+  }
+  .list-product .list-product-type .product-type-item .card-title {
+    padding: 10px 0;
+  }
+  .list-product .list-product-type .product-type-item .card-title a {
+    height: 25px;
+    width: 25px;
+  }
+  .list-product .list-product-type .product-type-item .card-title a img {
+    width: 10.8px;
+  }
+  .short-intro .content {
+    gap: 20px;
+  }
+  .certifications {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .certifications::after {
+    width: 50px;
+  }
+}
+.active_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: block;
+  width: 4px;
+  transition: all 0.5s;
+}

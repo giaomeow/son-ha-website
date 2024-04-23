@@ -1,0 +1,158 @@
+@import "./variable";
+.mission {
+  margin-bottom: 60px;
+  h1 {
+    margin-bottom: 12px;
+  }
+  h3 {
+    margin-bottom: 24px;
+  }
+}
+.spice-excellence {
+  background-color: $bgGray1;
+  padding: 36px 0;
+  h2 {
+    margin-bottom: 24px;
+  }
+  .tabs-content {
+    border-radius: 5px;
+    overflow: hidden;
+    .nav-tabs {
+      border-bottom: 2px solid $orangeColor;
+      background-color: #fff;
+    }
+    .nav-link {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(100% / 5);
+      color: $textNormal;
+      transition: all 0.3s;
+      border: unset;
+      border-bottom: 3px solid transparent;
+      &.active {
+        background-color: transparent;
+        border: unset;
+        border-bottom: 3px solid $orangeColor;
+        font-weight: bold;
+        color: $orangeColor;
+      }
+      &:hover {
+        border-bottom: 3px solid $orangeColor;
+      }
+    }
+    .tab-content {
+      padding: 12px 12px 24px 12px;
+      background-color: #fff;
+
+      .row {
+        width: 100%;
+        align-items: center;
+        margin-left: unset;
+      }
+    }
+  }
+}
+.minimize-risk {
+  padding: 36px 0 60px 0;
+  h2 {
+    margin-bottom: 24px;
+  }
+}
+.sun-kissed {
+  padding: 36px 0;
+  background-color: $bgGray1;
+  .carousel {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .content {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: hsl(0, 0%, 100%, 0.9);
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1023.98px) {
+  .mission {
+    .content {
+      margin-bottom: 20px;
+    }
+  }
+  .spice-excellence {
+    .tabs-content {
+      .nav-link {
+        text-align: center;
+      }
+      .tab-pane {
+        & > .row {
+          gap: 20px;
+          & > .col-6 {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .minimize-risk {
+    .img {
+      margin-bottom: 20px;
+    }
+  }
+  .sun-kissed {
+    .content {
+      width: 50%;
+      padding: 0 7px;
+    }
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .mission {
+    margin-bottom: 30px;
+  }
+  .spice-excellence {
+    padding: 30px 0;
+    .container-1152 {
+      padding: 0;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    h4 {
+      font-size: 12px;
+    }
+    .tabs-content {
+      .tab-content {
+        padding: 12px 0;
+      }
+    }
+  }
+  .minimize-risk {
+    padding: 30px 0;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  .sun-kissed {
+    .content {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+      background-color: transparent !important;
+      padding: 0;
+    }
+  }
+}
