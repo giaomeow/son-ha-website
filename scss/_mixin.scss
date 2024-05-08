@@ -21,6 +21,7 @@
 @mixin a-link-arrow($widthA, $widthArrows, $borderColor: "transparent") {
   border-radius: 50%;
   width: $widthA;
+  height: $widthA;
   aspect-ratio: 1/1;
   border: 1px solid $borderColor;
   display: flex;

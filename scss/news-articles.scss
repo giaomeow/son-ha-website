@@ -1,0 +1,99 @@
+@import "./variable";
+@import "./mixin";
+.news-content {
+  margin-bottom: 290px;
+  .dividend {
+    width: 86px;
+    height: 5px;
+    background-color: $orangeColor;
+    margin: 36px 0 12px 0;
+  }
+  .content {
+    line-height: 1.5;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .share-social {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 24px;
+    gap: 12px;
+    font-size: 14px;
+  }
+  .icon {
+    path {
+      transition: all 0.3s;
+    }
+  }
+  .fb-share {
+    &:hover {
+      path {
+        fill: #0766ff;
+      }
+    }
+  }
+  .twitter-share {
+    &:hover {
+      path {
+        fill: #000000;
+      }
+    }
+  }
+  .linkedin-share {
+    &:hover {
+      path {
+        fill: #0b66c2;
+      }
+    }
+  }
+  .list-read-next {
+    margin-top: 6px;
+    .item {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 13px 0;
+        margin-bottom: 6px;
+        p {
+          transition: all 0.3s;
+          line-height: 1;
+        }
+        &:hover {
+          .icon-a-arrow {
+            @include hover-a;
+            svg {
+              path {
+                fill: #fff !important;
+                fill-opacity: 1 !important;
+              }
+            }
+          }
+          p {
+            color: $orangeColor;
+          }
+        }
+      }
+      .icon-a-arrow {
+        @include a-link-arrow(20px, 9.6px, $textNormal50);
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+.lastest-news {
+  padding: 24px 0 60px 0;
+  background-color: $bgGray1;
+  h2 {
+    margin-bottom: 24px;
+  }
+  .item {
+    overflow: hidden;
+    .content {
+      background-color: white;
+    }
+  }
+}

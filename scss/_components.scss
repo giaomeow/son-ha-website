@@ -176,6 +176,30 @@ header {
       content: url(./../assets/icons/arrow-down-2.svg);
     }
   }
+  .drop-down02 {
+    position: relative;
+    padding: 0 !important;
+    .sub-menu02 {
+      position: absolute !important;
+      left: 100% !important;
+      top: 0 !important;
+    }
+    .dropdown-toggle {
+      position: relative;
+      &::after {
+        position: absolute;
+        right: 20px;
+        border: unset !important;
+        content: url(./../assets/icons/arrow-down-right.svg);
+        vertical-align: unset !important;
+        transition: all 0.3s;
+      }
+      &.nav-link:hover::after,
+      &.nav-link.active::after {
+        content: url(./../assets/icons/arrow-down-right.svg);
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1279.98px) {
@@ -215,7 +239,7 @@ header {
     }
     .dropdown-toggle.nav-link::after {
       position: absolute;
-      right: 0;
+      right: 5px;
     }
   }
   footer {
@@ -235,6 +259,18 @@ header {
   }
   .navbar > .container-fluid {
     padding: 0;
+  }
+  header .drop-down02 .sub-menu02 {
+    position: static !important;
+  }
+  header .drop-down02 .dropdown-toggle {
+    &::after {
+      content: url(./../assets/icons/arrow-down.svg);
+    }
+    &.nav-link:hover::after,
+    &.nav-link.active::after {
+      content: url(./../assets/icons/arrow-down.svg);
+    }
   }
 }
 
