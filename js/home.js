@@ -140,3 +140,20 @@ window.onload = () => {
     div.style.top = topItem + "px";
   });
 };
+
+$(document).ready(function () {
+  function fixedHeader() {
+    // Global variables
+    var offset = 25;
+
+    // Scroll function
+    $(window).scroll(function () {
+      // Where the magic happens
+      if (window.pageYOffset > offset) {
+        $("header").addClass(" fixed");
+        $(".content").addClass(" content-top");
+      }
+    });
+  }
+  fixedHeader();
+});

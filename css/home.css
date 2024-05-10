@@ -37,6 +37,7 @@
   align-items: center;
   color: white;
   transition: all 0.3s;
+  opacity: 0;
 }
 .banner .banner-carousel .banner-item .content-text .title {
   text-align: center;
