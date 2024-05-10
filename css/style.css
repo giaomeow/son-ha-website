@@ -209,7 +209,6 @@ header .drop-down02 .dropdown-toggle.nav-link:hover::after, header .drop-down02 
 @media only screen and (max-width: 1279.98px) {
   header {
     width: 100vw;
-    padding: 20px 0 5px;
   }
   header .navbar .navbar-collapse {
     padding: 15px 0;
