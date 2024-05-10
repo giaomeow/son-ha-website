@@ -101,4 +101,23 @@
     height: unset;
     flex-grow: 1;
   }
+  .list-news .item .content .footer-item a {
+    transform: rotate(180deg);
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .lastest-news {
+    padding: 24px 0;
+  }
+  .list-news {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+  .list-news .item {
+    display: grid;
+  }
+  .list-news .item .content .short-dics {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
 }
