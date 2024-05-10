@@ -1,3 +1,20 @@
+.news-content .meta-title h2 {
+  max-width: 758px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.news-content .meta-title .meta {
+  color: hsla(0, 0%, 27%, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  gap: 6px;
+  font-size: 16px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
 .news-content .dividend {
   width: 86px;
   height: 5px;

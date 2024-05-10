@@ -2,6 +2,19 @@
 @import "./mixin";
 .news-content {
   // margin-bottom: 290px;
+  .meta-title {
+    h2 {
+      max-width: 758px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .meta {
+      @include date-time-main;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+  }
   .dividend {
     width: 86px;
     height: 5px;

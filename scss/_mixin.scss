@@ -48,3 +48,16 @@
   background-color: $orangeColor !important;
   border: 1px solid $orangeColor !important;
 }
+
+@mixin date-time {
+  color: hsla(0, 0%, 27%, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  gap: 6px;
+}
+@mixin date-time-main {
+  @include date-time;
+  font-size: 16px;
+}
