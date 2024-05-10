@@ -522,6 +522,9 @@
   .certifications::after {
     width: 50px;
   }
+  .modal-dialog {
+    width: calc(100% - 30px);
+  }
 }
 .active_bar {
   position: absolute;
