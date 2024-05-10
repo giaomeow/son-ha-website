@@ -63,7 +63,6 @@ footer .info-content .links ul a {
 }
 
 header {
-  padding: 10px 0 5px;
   background-color: white;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
   position: fixed;
@@ -71,12 +70,12 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
+  padding: 10px 0 5px;
 }
 header .navbar-brand {
   padding: 0;
 }
 header .navbar {
-  padding: 0;
   background-color: #fff !important;
 }
 header .navbar .navbar-collapse {
@@ -210,6 +209,7 @@ header .drop-down02 .dropdown-toggle.nav-link:hover::after, header .drop-down02 
 @media only screen and (max-width: 1279.98px) {
   header {
     width: 100vw;
+    padding: 20px 0 5px;
   }
   header .navbar .navbar-collapse {
     padding: 15px 0;
