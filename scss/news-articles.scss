@@ -1,7 +1,7 @@
 @import "./variable";
 @import "./mixin";
 .news-content {
-  margin-bottom: 290px;
+  // margin-bottom: 290px;
   .dividend {
     width: 86px;
     height: 5px;
@@ -94,6 +94,23 @@
     overflow: hidden;
     .content {
       background-color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 1023.98px) {
+  .list-news {
+    .item {
+      display: flex;
+      flex-direction: column;
+      .img {
+        width: 100%;
+        aspect-ratio: 1/1;
+      }
+      .content {
+        height: unset;
+        flex-grow: 1;
+      }
     }
   }
 }
