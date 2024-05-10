@@ -43,12 +43,10 @@
   padding: 0 !important;
   transition: all 0.3s;
 }
-
 @mixin hover-a {
   background-color: $orangeColor !important;
   border: 1px solid $orangeColor !important;
 }
-
 @mixin date-time {
   color: hsla(0, 0%, 27%, 0.5);
   display: flex;
@@ -60,4 +58,25 @@
 @mixin date-time-main {
   @include date-time;
   font-size: 16px;
+}
+@mixin btn-brand-color {
+  background-color: $orangeColor;
+  border: 1px solid $orangeColor;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 200px;
+  padding: 15.5px 0;
+  font-size: 16px;
+  transition: all 0.3s;
+  &:hover {
+    color: $orangeColor;
+    background-color: transparent;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 150px;
+    padding: 12px 0;
+    font-size: 13px;
+  }
 }

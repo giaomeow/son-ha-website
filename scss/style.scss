@@ -36,7 +36,6 @@ main {
   padding-top: 105px;
   overflow-x: hidden;
 }
-
 //=================  Text =================
 h1 {
   // font-weight: bold;
@@ -80,6 +79,35 @@ a {
   text-decoration: none;
   color: unset;
   cursor: pointer;
+}
+// Margin
+.mb_79 {
+  margin-bottom: 79px;
+}
+// Btn
+.btn-brand-color {
+  @include btn-brand-color;
+}
+//=================  Form =================
+.form-group-style {
+  label {
+    font-size: 16px;
+  }
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $textNormal;
+    font-size: 15px;
+    &:focus-visible {
+      outline: none;
+    }
+  }
+  small {
+    color: $orangeColor;
+    font-size: 12px;
+  }
+
+  margin-bottom: 36px;
 }
 //=================  Breadcumbs =================
 .breadcrumb {
@@ -216,6 +244,7 @@ a {
     }
   }
 }
+
 //=================  RESPONSIVE =================
 @media only screen and (max-width: 1279.98px) {
   .container-1152 {
@@ -235,6 +264,9 @@ a {
   h3 {
     font-size: 16.9px;
   }
+  h4 {
+    font-size: 14.08px;
+  }
   h5 {
     font-size: 11.2px;
   }
@@ -248,5 +280,26 @@ a {
     .breadcrumb-item {
       font-size: 11px;
     }
+  }
+  //=================  Form =================
+  .form-group-style {
+    label {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $textNormal;
+      font-size: 14px;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    small {
+      color: $orangeColor;
+      font-size: 12px;
+    }
+    margin-bottom: 26px;
   }
 }
