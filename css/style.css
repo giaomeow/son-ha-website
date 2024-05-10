@@ -328,7 +328,7 @@ body {
   font-family: "SF Pro Display", sans-serif;
   font-size: 20px;
   line-height: 1.2;
-  font-weight: 500;
+  font-weight: 400;
   color: #444444;
   max-width: 1920px;
 }
@@ -356,37 +356,41 @@ main {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 36px;
   color: #ea6f18;
 }
 
 h2 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 32px;
   color: #ea6f18;
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   color: #ea6f18;
 }
 
 h4 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 20px;
 }
 
 h5 {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .card-title {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.2;
+  transition: font-size 0.5s ease-in-out;
+}
+.card-title p {
+  transition: font-size 0.5s ease-in-out;
 }
 
 a {
@@ -403,7 +407,7 @@ a {
 }
 .breadcrumb .breadcrumb-item.active {
   color: #ea6f18;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -425,7 +429,7 @@ a {
 }
 .list-news .main-news.item .content .short-dics {
   font-size: 18px;
-  font-size: 500;
+  font-size: 400;
   -webkit-line-clamp: 7; /* number of lines to show */
   line-clamp: 7;
 }
@@ -506,8 +510,8 @@ a {
   transition: all 0.3s;
 }
 .list-news .item .content .footer-item a:hover {
-  background-color: #ea6f18;
-  border: 1px solid #ea6f18;
+  background-color: #ea6f18 !important;
+  border: 1px solid #ea6f18 !important;
 }
 .list-news .item .content .footer-item a:hover svg path {
   fill: #fff !important;

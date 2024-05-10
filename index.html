@@ -468,18 +468,22 @@
               your diverse requirements.
             </div>
             <div class="col-md-6">
-              <video
-                width="100%"
-                controls
-                poster="./assets/img/banners/home-video.jpeg"
-              >
-                <source src="./assets/videos/home.mp4" type="video/mp4" />
-              </video>
+              <div class="img-thumbnail-video">
+                <p class="thumbnail">
+                  <img src="./assets/img/banners/home-video.jpeg" />
+                </p>
+                <p
+                  class="btn-play-video"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  <img src="./assets/icons/play-video.svg" />
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       <!-- ============================== TRACEABLE ============================== -->
       <section class="traceable">
         <div class="container-1152">
@@ -554,36 +558,47 @@
               <!-- item -->
               <div class="item">
                 <img
-                  src="./assets/img/banners/home-s4-1.jpeg"
+                  src="./assets/img/banners/home-s4-for-1.jpeg"
                   alt="Bac Ninh Factory"
                 />
+                <div class="overlay"></div>
+                <p class="text">Bac Ninh Factory</p>
               </div>
               <!-- item -->
               <div class="item">
                 <img
-                  src="./assets/img/banners/home-s4-2.jpeg"
-                  alt="Bac Ninh Factory"
+                  src="./assets/img/banners/home-s4-for-2.jpeg"
+                  alt="Yen Bai Factory"
                 />
+                <div class="overlay"></div>
+                <p class="text">Yen Bai Factory</p>
               </div>
               <!-- item -->
               <div class="item">
                 <img
-                  src="./assets/img/banners/home-s4-3.jpeg"
-                  alt="Bac Ninh Factory"
+                  src="./assets/img/banners/home-s4-for-3.jpeg"
+                  alt="Research and Development"
                 />
+                <div class="overlay"></div>
+                <p class="text">Research and Development</p>
               </div>
               <!-- item -->
               <div class="item">
                 <img
-                  src="./assets/img/banners/home-s4-4.jpeg"
-                  alt="Bac Ninh Factory"
+                  src="./assets/img/banners/home-s4-for-4.jpeg"
+                  alt=" Quality Control and Quality<br />
+                  Assurance"
                 />
+                <div class="overlay"></div>
+                <p class="text">
+                  Quality Control and Quality<br />
+                  Assurance
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <!-- ============================== CERTIFICATIONS ============================== -->
       <section class="certifications">
         <h2 class="text-center">OUR CERTIFICATIONS</h2>
@@ -801,6 +816,44 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal Video -->
+
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              x
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="iframe-video">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/wVgJnYuNSd0?si=r8fNLp9tU6HWnI7F"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

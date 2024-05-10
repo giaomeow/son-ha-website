@@ -1,10 +1,10 @@
 @import "./variable";
 @mixin a-tag-card-title($widthA, $widthArrows) {
-  opacity: 0;
+  opacity: 1;
   border-radius: 50%;
   width: $widthA;
   aspect-ratio: 1/1;
-  border: 1px solid transparent;
+  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,10 +12,12 @@
   img {
     width: $widthArrows;
     transition: all 0.3s;
+    transform: rotate(-180deg);
   }
-  &:hover {
-    background-color: $orangeColor;
-    border: 1px solid $orangeColor !important;
+}
+@mixin hover-rote-arrow {
+  img {
+    transform: rotate(0);
   }
 }
 @mixin a-link-arrow($widthA, $widthArrows, $borderColor: "transparent") {
@@ -43,6 +45,6 @@
 }
 
 @mixin hover-a {
-  background-color: $orangeColor;
-  border: 1px solid $orangeColor;
+  background-color: $orangeColor !important;
+  border: 1px solid $orangeColor !important;
 }

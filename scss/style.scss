@@ -10,7 +10,8 @@ body {
   font-family: "SF Pro Display", sans-serif;
   font-size: 20px;
   line-height: 1.2;
-  font-weight: 500;
+  // font-weight: 500;
+  font-weight: 400;
   color: $textNormal;
   max-width: 1920px;
 }
@@ -37,32 +38,42 @@ main {
 
 //=================  Text =================
 h1 {
-  font-weight: bold;
+  // font-weight: bold;
+  font-weight: 600;
   font-size: 36px;
   color: $orangeColor;
 }
 h2 {
-  font-weight: bold;
+  // font-weight: bold;
+  font-weight: 600;
   font-size: 32px;
   color: $orangeColor;
 }
 h3 {
-  font-weight: 500;
+  // font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   color: $orangeColor;
 }
 h4 {
-  font-weight: bold;
+  // font-weight: bold;
+  font-weight: 600;
   font-size: 20px;
 }
 h5 {
   font-size: 16px;
-  font-weight: bold;
+  // font-weight: bold;
+  font-weight: 600;
 }
 .card-title {
   font-size: 28px;
-  font-weight: bold;
+  // font-weight: bold;
+  font-weight: 600;
   line-height: 1.2;
+  transition: font-size 0.5s ease-in-out;
+  p {
+    transition: font-size 0.5s ease-in-out;
+  }
 }
 a {
   text-decoration: none;
@@ -76,7 +87,8 @@ a {
     color: $textNormal40;
     &.active {
       color: $orangeColor;
-      font-weight: bold;
+      // font-weight: bold;
+      font-weight: 500;
     }
   }
 }
@@ -97,7 +109,8 @@ a {
         padding: 24px;
         .short-dics {
           font-size: 18px;
-          font-size: 500;
+          // font-size: 500;
+          font-size: 400;
           -webkit-line-clamp: 7; /* number of lines to show */
           line-clamp: 7;
         }

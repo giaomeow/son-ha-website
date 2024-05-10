@@ -101,6 +101,17 @@ $(document).ready(function () {
       window.scrollTo(0, getPosition(listProduct) - header.offsetHeight);
     });
   });
+
+  //  Hiệu ứng thay đổi font weight chữ cho card-title
+  let listProductType = document.querySelectorAll(
+    "#list-product .product-type-item"
+  );
+  listProductType.forEach((child) => {
+    child.addEventListener("mouseover", () => {
+      // Khi con chuột hover vào, đổi font-weight thành 400
+      child.querySelector(".card-title").style.fontWeight = "400";
+    });
+  });
 });
 
 window.onload = () => {
