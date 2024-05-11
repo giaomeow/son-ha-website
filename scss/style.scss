@@ -80,13 +80,26 @@ a {
   color: unset;
   cursor: pointer;
 }
-// Margin
+//================= Margin =================
 .mb_79 {
   margin-bottom: 79px;
 }
-// Btn
+.pt-24 {
+  padding-top: 24px;
+}
+.pb-48 {
+  padding-bottom: 48px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+//================= Button =================
 .btn-brand-color {
   @include btn-brand-color;
+}
+//=================  Background =================
+.bg-gray-main {
+  background-color: $bgGray1;
 }
 //=================  Form =================
 .form-group-style {
@@ -269,7 +282,62 @@ a {
     }
   }
 }
-
+//=================  Section Haft Haft =================
+.section-haft-haft {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 24px 0;
+  .haft-text,
+  .haft-img {
+    width: 50%;
+  }
+  .haft-img {
+    border-radius: 5px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .haft-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    h3 {
+      color: $orangeColor;
+    }
+  }
+  .haft-haft-part {
+    display: flex;
+    gap: 44px;
+    .haft-part {
+      width: 50%;
+      position: relative;
+      &.polygon {
+        padding-left: 24px;
+        &::before {
+          position: absolute;
+          content: url(../assets/icons/Polygon.svg);
+          top: 0;
+          left: 0;
+        }
+      }
+      h4 {
+        margin-bottom: 12px;
+        color: $orangeColor;
+        position: relative;
+      }
+      p {
+        font-size: 16px;
+      }
+      .list-img {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+    }
+  }
+}
 //=================  RESPONSIVE =================
 @media only screen and (max-width: 1279.98px) {
   .container-1152 {

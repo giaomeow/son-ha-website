@@ -8,8 +8,9 @@ footer .copy-right {
   padding: 11px 0;
 }
 footer .copy-right p {
-  font-weight: normal !important;
+  font-weight: 300 !important;
   font-size: 14px;
+  letter-spacing: 1px;
 }
 footer .info {
   background-color: #ea6f18;
@@ -403,6 +404,18 @@ a {
   margin-bottom: 79px;
 }
 
+.pt-24 {
+  padding-top: 24px;
+}
+
+.pb-48 {
+  padding-bottom: 48px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
 .btn-brand-color {
   background-color: #ea6f18;
   border: 1px solid #ea6f18;
@@ -425,6 +438,10 @@ a {
     padding: 12px 0;
     font-size: 13px;
   }
+}
+
+.bg-gray-main {
+  background-color: #f1f1f1;
 }
 
 .form-group-style {
@@ -618,6 +635,62 @@ a {
 }
 .list-news .item:hover .content .footer-item a svg {
   transform: rotate(180deg);
+}
+
+.section-haft-haft {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 24px 0;
+}
+.section-haft-haft .haft-text,
+.section-haft-haft .haft-img {
+  width: 50%;
+}
+.section-haft-haft .haft-img {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.section-haft-haft .haft-img img {
+  width: 100%;
+}
+.section-haft-haft .haft-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.section-haft-haft .haft-text h3 {
+  color: #ea6f18;
+}
+.section-haft-haft .haft-haft-part {
+  display: flex;
+  gap: 44px;
+}
+.section-haft-haft .haft-haft-part .haft-part {
+  width: 50%;
+  position: relative;
+}
+.section-haft-haft .haft-haft-part .haft-part.polygon {
+  padding-left: 24px;
+}
+.section-haft-haft .haft-haft-part .haft-part.polygon::before {
+  position: absolute;
+  content: url(../assets/icons/Polygon.svg);
+  top: 0;
+  left: 0;
+}
+.section-haft-haft .haft-haft-part .haft-part h4 {
+  margin-bottom: 12px;
+  color: #ea6f18;
+  position: relative;
+}
+.section-haft-haft .haft-haft-part .haft-part p {
+  font-size: 16px;
+}
+.section-haft-haft .haft-haft-part .haft-part .list-img {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1279.98px) {
