@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./css/contact-us.css" />
   </head>
   <body>
-    <header>
+    <header class="fixed-top nav-fixed">
       <div class="container-1152">
         <!-- place navbar here -->
         <nav class="navbar navbar-expand-xl bg-body-tertiary">
@@ -62,6 +62,7 @@
                 />
                 <img src="./assets/icons/find.svg" type="submit" />
               </form>
+              <!-- Desktop -->
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <!-- home -->
                 <li class="nav-item">
@@ -75,12 +76,13 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="dropdownAboutUs"
                   >
                     About-us
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu" aria-labelledby="dropdownAboutUs">
                     <li>
-                      <a class="dropdown-item active" href="/who-we-are.html"
+                      <a class="dropdown-item" href="/who-we-are.html"
                         >Who we are</a
                       >
                     </li>
@@ -90,22 +92,17 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/mission.html"
+                      <a class="dropdown-item" href="/ceo-message.html"
                         >CEO's Message</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/mission.html"
+                      <a class="dropdown-item" href="/certifications.html"
                         >Food Safety & Certifications</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/mission.html">News</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/mission.html"
-                        >Company Video</a
-                      >
+                      <a class="dropdown-item" href="/news.html">News</a>
                     </li>
                   </ul>
                 </li>
@@ -117,6 +114,7 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="dropdownAboutUs"
                   >
                     Products
                   </a>
@@ -173,8 +171,24 @@
                     <li>
                       <a class="dropdown-item" href="#">Sourcing</a>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Factory</a>
+                    <li class="nav-item dropdown drop-down02">
+                      <a
+                        class="nav-link dropdown-toggle dropdown-item"
+                        href=""
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Factory
+                      </a>
+                      <ul class="dropdown-menu sub-menu02">
+                        <li>
+                          <a class="dropdown-item" href="#">Bac Ninh Factory</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Yen Bai Factory</a>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </li>
