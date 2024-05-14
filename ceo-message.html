@@ -32,7 +32,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="fixed-top nav-fixed">
       <div class="container-1152">
         <!-- place navbar here -->
         <nav class="navbar navbar-expand-xl bg-body-tertiary">
@@ -65,6 +65,7 @@
                 />
                 <img src="./assets/icons/find.svg" type="submit" />
               </form>
+              <!-- Desktop -->
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <!-- home -->
                 <li class="nav-item">
@@ -78,12 +79,13 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="dropdownAboutUs"
                   >
                     About-us
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu" aria-labelledby="dropdownAboutUs">
                     <li>
-                      <a class="dropdown-item active" href="/who-we-are.html"
+                      <a class="dropdown-item" href="/who-we-are.html"
                         >Who we are</a
                       >
                     </li>
@@ -93,22 +95,17 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/mission.html"
+                      <a class="dropdown-item active" href="/ceo-message.html"
                         >CEO's Message</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/mission.html"
+                      <a class="dropdown-item" href="/certifications.html"
                         >Food Safety & Certifications</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/mission.html">News</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/mission.html"
-                        >Company Video</a
-                      >
+                      <a class="dropdown-item" href="/news.html">News</a>
                     </li>
                   </ul>
                 </li>
@@ -120,6 +117,7 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="dropdownAboutUs"
                   >
                     Products
                   </a>
@@ -176,8 +174,24 @@
                     <li>
                       <a class="dropdown-item" href="#">Sourcing</a>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Factory</a>
+                    <li class="nav-item dropdown drop-down02">
+                      <a
+                        class="nav-link dropdown-toggle dropdown-item"
+                        href=""
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Factory
+                      </a>
+                      <ul class="dropdown-menu sub-menu02">
+                        <li>
+                          <a class="dropdown-item" href="#">Bac Ninh Factory</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Yen Bai Factory</a>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </li>
@@ -243,7 +257,7 @@
         <div class="container-1152">
           <div class="row align-items-center">
             <div class="text col-lg-6 col-xl-5">
-              <h1 class="text-uppercase">CEO’s Message</h1>
+              <h1>CEO’s MESSAGE</h1>
               <div class="message">
                 <p>
                   Embracing a culture of continuous improvement, our Kaizen
@@ -267,13 +281,13 @@
           </div>
           <div class="disc">
             <p>
-              Pacific Basin (Son Ha Spice & Flavoring Co.,) takes immense pride
-              in its position as a leading spice exporter in Vietnam. Since our
-              humble beginning in 1992, we have dedicated ourselves to supplying
-              high-value spices to customers worldwide. Our unwavering
-              commitment to quality and compliance, coupled with a steadfast
-              focus on the safety of our customers and employees, has been the
-              cornerstone of our policy.
+              <strong>Pacific Basin (Son Ha Spice & Flavoring Co.,)</strong>
+              takes immense pride in its position as a leading spice exporter in
+              Vietnam. Since our humble beginning in 1992, we have dedicated
+              ourselves to supplying high-value spices to customers worldwide.
+              Our unwavering commitment to quality and compliance, coupled with
+              a steadfast focus on the safety of our customers and employees,
+              has been the cornerstone of our policy.
               <br />
               <br />
               In our pursuit of excellence, we continuously strive to provide

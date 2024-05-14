@@ -38,6 +38,12 @@
   max-width: 404px;
   height: 100%;
 }
+.market-report .carousel .slider-for .slick-slide {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
 .market-report .carousel .slider-for .slick-track,
 .market-report .carousel .slider-for .slick-list,
 .market-report .carousel .slider-for .slick-slide,
@@ -46,10 +52,6 @@
 }
 .market-report .carousel .slider-for .item {
   height: 100%;
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
   padding: 36px 24px;
   color: #fff;
   display: flex !important;
@@ -158,9 +160,34 @@
   background-color: transparent !important;
 }
 
+@media only screen and (min-width: 1279.98px) {
+  .list-news .main-news {
+    display: flex;
+  }
+  .list-news .main-news .img {
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+  }
+  .list-news .main-news .card-title {
+    margin-bottom: 12px;
+    font-size: 26px;
+  }
+  .list-news .item:not(.main-news) .card-title-2 {
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .list-news .item:not(.main-news) .img {
+    max-width: 174px;
+  }
+}
 @media only screen and (max-width: 1279.98px) {
   .spotlight .list-news {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .main-news {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
   .market-report .carousel .slider-for {
     max-width: 100%;
@@ -170,6 +197,30 @@
   }
 }
 @media only screen and (max-width: 767.98px) {
+  .market-report .carousel {
+    height: 450px;
+    max-height: 450px;
+  }
+  .market-report .carousel .slider-nav {
+    height: 100%;
+  }
+  .market-report .carousel .slider-nav * {
+    height: 100%;
+  }
+  .market-report .carousel .slider-nav * img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .market-report .carousel .slider-for .item {
+    justify-content: space-around;
+  }
+  .market-report .carousel .slider-for .item .content p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 13; /* number of lines to show */
+    line-clamp: 13;
+    -webkit-box-orient: vertical;
+  }
   .spotlight .list-news {
     grid-template-columns: repeat(1, 1fr);
   }

@@ -149,20 +149,23 @@ a {
 }
 //=================  Breadcumbs =================
 .breadcrumb {
-  margin: 36px 0 24px 0;
+  margin: 50px 0 24px 0;
   .breadcrumb-item {
     font-size: 14px;
-    color: $textNormal40;
+    color: $textNormal70;
+    padding-left: 3px;
     &.active {
       color: $orangeColor;
-      // font-weight: bold;
+      font-weight: 600 !important;
       font-weight: 500;
     }
   }
 }
 .breadcrumb-item + .breadcrumb-item::before {
-  color: $textNormal40;
+  color: $textNormal70;
   content: var(--bs-breadcrumb-divider, ">");
+  padding-right: 3px;
+  font-weight: normal !important;
 }
 //=================  List news =================
 .list-news {
@@ -343,6 +346,15 @@ a {
   .container-1152 {
     padding: 0 15px;
   }
+  .list-news {
+    .footer-item {
+      .links {
+        a {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 767.98px) {
   main {
@@ -398,5 +410,17 @@ a {
       font-size: 12px;
     }
     margin-bottom: 26px;
+  }
+  .list-news {
+    .main-news.item {
+      .content {
+        & > div:first-child {
+          .card-title {
+            margin-bottom: 10px;
+          }
+          gap: 10px;
+        }
+      }
+    }
   }
 }

@@ -28,18 +28,22 @@
       justify-content: center;
       width: calc(100% / 5);
       color: $textNormal;
-      transition: all 0.3s;
+      transition: all 0.3s linear;
+      --webkit-transition: all 0.3s linear;
       border: unset;
-      border-bottom: 3px solid transparent;
+      border-bottom: 4px solid transparent;
+      font-weight: 500;
       &.active {
         background-color: transparent;
         border: unset;
-        border-bottom: 3px solid $orangeColor;
-        font-weight: bold;
+        // border-bottom: 3px solid $orangeColor;
+        // font-weight: bold;
+        font-weight: 600;
+        font-style: normal;
         color: $orangeColor;
       }
-      &:hover {
-        border-bottom: 3px solid $orangeColor;
+      &:hover:not(.active) {
+        border-bottom: 4px solid $orangeColor;
       }
     }
     .tab-content {
@@ -50,6 +54,15 @@
         width: 100%;
         align-items: center;
         margin-left: unset;
+        --bs-gutter-x: 0;
+        > .col-6:first-child {
+          padding-right: 48px;
+          padding-left: 12px;
+        }
+        > .col-6:last-child {
+          padding-right: 12px;
+          padding-left: 0px;
+        }
       }
     }
   }
@@ -80,6 +93,9 @@
     flex-direction: column;
     justify-content: center;
     background: hsl(0, 0%, 100%, 0.9);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px); /* For Safari */
+    max-width: 364px;
     h2 {
       margin-bottom: 24px;
     }
@@ -119,6 +135,13 @@
     }
   }
 }
+@media screen and (max-width: 1023.98px) and (min-width: 767.98px) {
+  .sun-kissed {
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
 @media only screen and (max-width: 767.98px) {
   .mission {
     margin-bottom: 30px;
@@ -137,6 +160,14 @@
     .tabs-content {
       .tab-content {
         padding: 12px 0;
+        .row {
+          > .col-6:first-child {
+            padding-right: 15px;
+          }
+          > .col-6:last-child {
+            padding-left: 15px;
+          }
+        }
       }
     }
   }
@@ -147,6 +178,7 @@
     }
   }
   .sun-kissed {
+    padding: 30px 0;
     .content {
       position: relative;
       width: 100%;

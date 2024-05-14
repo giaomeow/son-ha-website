@@ -6,12 +6,14 @@ h2 {
   margin-bottom: 37px;
 }
 .list-certifications .logos {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  justify-content: center;
   transition: all 0.3s;
   margin-bottom: 36px;
+  flex-wrap: wrap;
 }
 .list-certifications .logos .item {
+  width: 20%;
   filter: grayscale(1);
   border: 1px solid #adadad;
 }
@@ -53,7 +55,9 @@ h2 {
   }
   .list-certifications .logos {
     margin-bottom: 20px;
-    grid-template-columns: repeat(4, 1fr);
+  }
+  .list-certifications .logos .item {
+    width: 25%;
   }
   .list-certifications .list-text .list-1 {
     width: 100%;

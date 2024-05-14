@@ -1,5 +1,5 @@
 .content {
-  margin-bottom: 72px;
+  margin-bottom: 35px;
 }
 .content h1 {
   margin-bottom: 36px;
@@ -10,12 +10,12 @@
   padding: 44.61px 47.68px;
   background-image: url(./../assets/img/background/ceo-mess.svg);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .content .tag-name {
   margin-top: 8px;
   color: #ea6f18;
   font-weight: bold;
+  line-height: 1;
 }
 .content .tag-name span {
   font-weight: 400;
@@ -24,6 +24,7 @@
 .content .disc {
   margin-top: 48px;
   text-align: justify;
+  line-height: 1.4;
 }
 
 @media only screen and (max-width: 1279.98px) {
