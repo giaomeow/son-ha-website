@@ -137,7 +137,7 @@ header .navbar .navbar-nav .dropdown-menu {
   padding: 0;
   margin: 0;
   left: -20px;
-  top: calc(100% + 5px);
+  top: calc(100% + 15px);
   border: 0.3px solid rgba(0, 0, 0, 0.15);
   width: 200px;
 }
