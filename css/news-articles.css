@@ -99,6 +99,9 @@
 .lastest-news h2 {
   margin-bottom: 24px;
 }
+.lastest-news .card-title-2 {
+  font-weight: 500;
+}
 .lastest-news .item {
   overflow: hidden;
 }

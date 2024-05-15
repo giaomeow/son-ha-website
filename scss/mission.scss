@@ -14,58 +14,6 @@
   h2 {
     margin-bottom: 24px;
   }
-  .tabs-content {
-    border-radius: 5px;
-    overflow: hidden;
-    .nav-tabs {
-      border-bottom: 2px solid $orangeColor;
-      background-color: #fff;
-    }
-    .nav-link {
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: calc(100% / 5);
-      color: $textNormal;
-      transition: all 0.3s linear;
-      --webkit-transition: all 0.3s linear;
-      border: unset;
-      border-bottom: 4px solid transparent;
-      font-weight: 500;
-      &.active {
-        background-color: transparent;
-        border: unset;
-        // border-bottom: 3px solid $orangeColor;
-        // font-weight: bold;
-        font-weight: 600;
-        font-style: normal;
-        color: $orangeColor;
-      }
-      &:hover:not(.active) {
-        border-bottom: 4px solid $orangeColor;
-      }
-    }
-    .tab-content {
-      padding: 12px 12px 24px 12px;
-      background-color: #fff;
-
-      .row {
-        width: 100%;
-        align-items: center;
-        margin-left: unset;
-        --bs-gutter-x: 0;
-        > .col-6:first-child {
-          padding-right: 48px;
-          padding-left: 12px;
-        }
-        > .col-6:last-child {
-          padding-right: 12px;
-          padding-left: 0px;
-        }
-      }
-    }
-  }
 }
 .minimize-risk {
   padding: 36px 0 60px 0;

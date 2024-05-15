@@ -1,5 +1,6 @@
 @import "./variable";
 @import "./components";
+// @import "./fontface";
 //================= reset css =================
 * {
   padding: 0;
@@ -8,6 +9,7 @@
 }
 body {
   font-family: "SF Pro Display", sans-serif;
+  letter-spacing: 0.6px;
   font-size: 20px;
   line-height: 1.2;
   // font-weight: 500;
@@ -25,6 +27,9 @@ p,
 ul,
 li {
   margin-bottom: 0;
+}
+.fw-lighter {
+  font-weight: 200 !important;
 }
 //=================  Container =================
 .container-1152 {
@@ -87,6 +92,12 @@ a {
 .pt-24 {
   padding-top: 24px;
 }
+.pb-24 {
+  padding-bottom: 24px;
+}
+.pt-48 {
+  padding-top: 48px;
+}
 .pb-48 {
   padding-bottom: 48px;
 }
@@ -97,6 +108,61 @@ a {
 .btn-brand-color {
   @include btn-brand-color;
 }
+//================= Tab Style =================
+
+.tab-style.tabs-content {
+  border-radius: 5px;
+  overflow: hidden;
+  .nav-tabs {
+    border-bottom: 2px solid $orangeColor;
+    background-color: #fff;
+  }
+  .nav-link {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 5);
+    color: $textNormal;
+    transition: all 0.3s linear;
+    --webkit-transition: all 0.3s linear;
+    border: unset;
+    border-bottom: 4px solid transparent;
+    font-weight: 500;
+    &.active {
+      background-color: transparent;
+      border: unset;
+      // border-bottom: 3px solid $orangeColor;
+      // font-weight: bold;
+      font-weight: 600;
+      font-style: normal;
+      color: $orangeColor;
+    }
+    &:hover:not(.active) {
+      border-bottom: 4px solid $orangeColor;
+    }
+  }
+  .tab-content {
+    padding: 12px 12px 24px 12px;
+    background-color: #fff;
+
+    .row {
+      width: 100%;
+      align-items: center;
+      margin-left: unset;
+      --bs-gutter-x: 0;
+      > .col-6:first-child {
+        padding-right: 48px;
+        padding-left: 12px;
+      }
+      > .col-6:last-child {
+        padding-right: 12px;
+        padding-left: 0px;
+      }
+    }
+  }
+}
+
 //=================  Background =================
 .bg-gray-main {
   background-color: $bgGray1;
@@ -285,6 +351,7 @@ a {
     }
   }
 }
+
 //=================  Section Haft Haft =================
 .section-haft-haft {
   display: flex;

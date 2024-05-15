@@ -1,0 +1,28 @@
+.section-table-crop {
+  transition: all 0.3s ease-in-out;
+  h2 {
+    margin-bottom: 12px;
+  }
+  .tab-style.tabs-content {
+    .nav-link {
+      width: calc(100% / 3);
+    }
+    .tab-content,
+    .tab-pane,
+    .tab-pane .img {
+      transition: all 0.3s ease-in-out;
+    }
+    .tab-content {
+      padding-bottom: 0;
+    }
+  }
+}
+.section-raw-material {
+  h2 {
+    margin-bottom: 6px;
+  }
+  h3 {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
