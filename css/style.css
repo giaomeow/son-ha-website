@@ -207,13 +207,6 @@ header .drop-down02 .dropdown-toggle.nav-link:hover::after, header .drop-down02 
   content: url(./../assets/icons/arrow-down-right.svg);
 }
 
-@media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    header .navbar .navbar-nav .dropdown-menu li a.dropdown-item {
-      white-space: pre-wrap !important;
-    }
-  }
-}
 @media only screen and (min-width: 1200px) {
   header {
     padding: 0;
@@ -233,6 +226,9 @@ header .drop-down02 .dropdown-toggle.nav-link:hover::after, header .drop-down02 
   }
   header nav.navbar .navbar-nav .dropdown-menu {
     top: 100%;
+  }
+  header .navbar .navbar-nav .nav-item > .dropdown-menu > li > a.dropdown-item:not(.nav-link) {
+    white-space: pre-wrap !important;
   }
 }
 @media only screen and (max-width: 1279.98px) {

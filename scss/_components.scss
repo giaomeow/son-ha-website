@@ -206,15 +206,6 @@ header {
   }
 }
 
-// Support Safari
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    header .navbar .navbar-nav .dropdown-menu li a.dropdown-item {
-      white-space: pre-wrap !important;
-    }
-  }
-}
-
 // Hiệu ứng xảy ra trên desktop
 @media only screen and (min-width: 1200px) {
   header {
@@ -237,6 +228,15 @@ header {
         }
       }
     }
+  }
+  header
+    .navbar
+    .navbar-nav
+    .nav-item
+    > .dropdown-menu
+    > li
+    > a.dropdown-item:not(.nav-link) {
+    white-space: pre-wrap !important;
   }
 }
 
