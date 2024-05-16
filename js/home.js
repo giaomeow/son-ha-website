@@ -150,10 +150,17 @@ $(document).ready(function () {
     $(window).scroll(function () {
       // Where the magic happens
       if (window.pageYOffset > offset) {
-        $("header").addClass(" fixed");
-        $(".content").addClass(" content-top");
+        $("header").addClass("fixed");
+        $(".content").addClass("content-top");
       }
     });
   }
   fixedHeader();
+});
+
+$("#staticBackdrop").on("hidden.bs.modal", function (e) {
+  $("#staticBackdrop iframe").attr(
+    "src",
+    $("#staticBackdrop iframe").attr("src")
+  );
 });
