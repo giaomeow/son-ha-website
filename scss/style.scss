@@ -491,3 +491,7 @@ a {
     }
   }
 }
+
+.nav-link:focus-visible {
+  box-shadow: unset;
+}

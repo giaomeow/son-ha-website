@@ -854,3 +854,6 @@ a {
     margin-bottom: 10px;
   }
 }
+.nav-link:focus-visible {
+  box-shadow: unset;
+}
