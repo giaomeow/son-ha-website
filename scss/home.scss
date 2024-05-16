@@ -125,7 +125,14 @@
       --bs-gutter-y: 24px;
     }
     .product-type-item {
-      position: relative;
+      > a {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+      }
       img {
         width: 100%;
         object-fit: cover;
@@ -133,10 +140,11 @@
       .card-title {
         position: absolute;
         bottom: 0;
-        left: 12px;
+        left: 0;
+        right: 0;
         display: flex;
         justify-content: space-between;
-        width: calc(100% - 24px);
+        // width: calc(100% - 24px);
         padding: 20.5px 20px;
         background: rgb(0, 0, 0);
         background: linear-gradient(
@@ -144,7 +152,7 @@
           rgba(0, 0, 0, 0) 0%,
           rgba(0, 0, 0, 0.645) 80%
         );
-        a {
+        span {
           opacity: 0;
           border-radius: 50%;
           width: 35px;
@@ -166,7 +174,7 @@
       }
       &:hover {
         .card-title {
-          a {
+          span {
             opacity: 1;
             border: 1px solid white;
           }
@@ -257,7 +265,7 @@
           rgba(0, 0, 0, 0) 0%,
           rgba(0, 0, 0, 0.645) 80%
         );
-        a {
+        span {
           @include a-tag-card-title(30px, 14.4px);
           &:hover {
             @include hover-a;
@@ -270,7 +278,7 @@
         }
         .card-title {
           opacity: 1;
-          a {
+          span {
             opacity: 1;
             border: 1px solid white;
             @include hover-rote-arrow;
@@ -423,7 +431,7 @@
       .product-type-item {
         .card-title {
           align-items: flex-end;
-          a {
+          span {
             height: 35px;
             opacity: 1;
             border: 1px solid white;
@@ -444,9 +452,10 @@
       .item {
         .card-title {
           opacity: 1;
-          & a {
+          & span {
             opacity: 1;
             border: 1px solid white;
+            transform: rotate(180deg) !important;
           }
         }
       }
@@ -498,8 +507,8 @@
       .product-type-item {
         width: 50%;
         .card-title {
-          padding: 10px 0;
-          a {
+          padding: 10px;
+          span {
             height: 25px;
             width: 25px;
             img {

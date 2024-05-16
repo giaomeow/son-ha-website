@@ -115,8 +115,13 @@
   --bs-gutter-x: 24px;
   --bs-gutter-y: 24px;
 }
-.list-product .list-product-type .product-type-item {
+.list-product .list-product-type .product-type-item > a {
   position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .list-product .list-product-type .product-type-item img {
   width: 100%;
@@ -126,15 +131,15 @@
 .list-product .list-product-type .product-type-item .card-title {
   position: absolute;
   bottom: 0;
-  left: 12px;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 24px);
   padding: 20.5px 20px;
   background: rgb(0, 0, 0);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.645) 80%);
 }
-.list-product .list-product-type .product-type-item .card-title a {
+.list-product .list-product-type .product-type-item .card-title span {
   opacity: 0;
   border-radius: 50%;
   width: 35px;
@@ -145,15 +150,15 @@
   align-items: center;
   transition: all 0.3s;
 }
-.list-product .list-product-type .product-type-item .card-title a img {
+.list-product .list-product-type .product-type-item .card-title span img {
   width: 16.8px;
   transition: all 0.3s;
 }
-.list-product .list-product-type .product-type-item .card-title a:hover {
+.list-product .list-product-type .product-type-item .card-title span:hover {
   background-color: #ea6f18;
   border: 1px solid #ea6f18 !important;
 }
-.list-product .list-product-type .product-type-item:hover .card-title a {
+.list-product .list-product-type .product-type-item:hover .card-title span {
   opacity: 1;
   border: 1px solid white;
 }
@@ -234,7 +239,7 @@
   background: rgb(0, 0, 0);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.645) 80%);
 }
-.traceable .traceable-for .item .card-title a {
+.traceable .traceable-for .item .card-title span {
   opacity: 1;
   border-radius: 50%;
   width: 30px;
@@ -245,12 +250,12 @@
   align-items: center;
   transition: all 0.3s;
 }
-.traceable .traceable-for .item .card-title a img {
+.traceable .traceable-for .item .card-title span img {
   width: 14.4px;
   transition: all 0.3s;
   transform: rotate(-180deg);
 }
-.traceable .traceable-for .item .card-title a:hover {
+.traceable .traceable-for .item .card-title span:hover {
   background-color: #ea6f18 !important;
   border: 1px solid #ea6f18 !important;
 }
@@ -260,11 +265,11 @@
 .traceable .traceable-for .item:hover .card-title {
   opacity: 1;
 }
-.traceable .traceable-for .item:hover .card-title a {
+.traceable .traceable-for .item:hover .card-title span {
   opacity: 1;
   border: 1px solid white;
 }
-.traceable .traceable-for .item:hover .card-title a img {
+.traceable .traceable-for .item:hover .card-title span img {
   transform: rotate(0);
 }
 .traceable .traceable-carousel .item {
@@ -385,7 +390,7 @@
   .list-product .list-product-type .product-type-item .card-title {
     align-items: flex-end;
   }
-  .list-product .list-product-type .product-type-item .card-title a {
+  .list-product .list-product-type .product-type-item .card-title span {
     height: 35px;
     opacity: 1;
     border: 1px solid white;
@@ -397,9 +402,10 @@
   .traceable .traceable-for .item .card-title {
     opacity: 1;
   }
-  .traceable .traceable-for .item .card-title a {
+  .traceable .traceable-for .item .card-title span {
     opacity: 1;
     border: 1px solid white;
+    transform: rotate(180deg) !important;
   }
 }
 @media only screen and (max-width: 767.98px) {
@@ -438,13 +444,13 @@
     width: 50%;
   }
   .list-product .list-product-type .product-type-item .card-title {
-    padding: 10px 0;
+    padding: 10px;
   }
-  .list-product .list-product-type .product-type-item .card-title a {
+  .list-product .list-product-type .product-type-item .card-title span {
     height: 25px;
     width: 25px;
   }
-  .list-product .list-product-type .product-type-item .card-title a img {
+  .list-product .list-product-type .product-type-item .card-title span img {
     width: 10.8px;
   }
   .short-intro .content {

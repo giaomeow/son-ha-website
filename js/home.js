@@ -1,3 +1,4 @@
+// Xử lý carousel
 $(document).ready(function () {
   // Banner Carousel
   $(".banner-carousel").slick({
@@ -101,17 +102,6 @@ $(document).ready(function () {
       window.scrollTo(0, getPosition(listProduct) - header.offsetHeight);
     });
   });
-
-  //  Hiệu ứng thay đổi font weight chữ cho card-title
-  let listProductType = document.querySelectorAll(
-    "#list-product .product-type-item"
-  );
-  listProductType.forEach((child) => {
-    child.addEventListener("mouseover", () => {
-      // Khi con chuột hover vào, đổi font-weight thành 400
-      child.querySelector(".card-title").style.fontWeight = "400";
-    });
-  });
 });
 
 window.onload = () => {
@@ -135,7 +125,7 @@ window.onload = () => {
         )
         .getAttribute("data-slick-index")
     );
-    console.log(index * (heightFa / child.length));
+    // console.log(index * (heightFa / child.length));
     let topItem = index * (heightFa / child.length);
     div.style.top = topItem + "px";
   });
@@ -158,6 +148,7 @@ $(document).ready(function () {
   fixedHeader();
 });
 
+// Xử lý tắt iframe YTB khi modal tắt
 $("#staticBackdrop").on("hidden.bs.modal", function (e) {
   $("#staticBackdrop iframe").attr(
     "src",
