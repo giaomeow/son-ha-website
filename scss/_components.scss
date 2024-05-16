@@ -137,18 +137,20 @@ header {
         top: calc(100% + 15px);
         border: 0.3px solid rgba(0, 0, 0, 0.15);
         width: 200px;
-        li a.dropdown-item {
-          @include a-header-style;
-          padding: 16px 20px !important;
-          border-bottom-right-radius: 10px;
-          text-wrap: wrap;
-          white-space: pre-wrap !important;
-          &.active {
-            background-color: unset;
-            color: $orangeColor !important;
-          }
-          &:hover {
-            background-color: #d7d7d7;
+        li {
+          a.dropdown-item {
+            @include a-header-style;
+            padding: 16px 20px !important;
+            border-bottom-right-radius: 10px;
+            // white-space: pre-wrap !important;
+            text-wrap: wrap;
+            &.active {
+              background-color: unset;
+              color: $orangeColor !important;
+            }
+            &:hover {
+              background-color: #d7d7d7;
+            }
           }
         }
       }
@@ -199,6 +201,40 @@ header {
       &.nav-link:hover::after,
       &.nav-link.active::after {
         content: url(./../assets/icons/arrow-down-right.svg);
+      }
+    }
+  }
+}
+
+// Support Safari
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    header .navbar .navbar-nav .dropdown-menu li a.dropdown-item {
+      white-space: pre-wrap !important;
+    }
+  }
+}
+
+// Hiệu ứng xảy ra trên desktop
+@media only screen and (min-width: 1200px) {
+  header {
+    padding: 0;
+    nav.navbar {
+      padding: 0;
+      .navbar-collapse {
+        height: 115px;
+        justify-content: space-between;
+        padding-top: 10px;
+      }
+      .nav-item {
+        padding: 0;
+        padding-bottom: 21.5px;
+        cursor: pointer;
+      }
+      .navbar-nav {
+        .dropdown-menu {
+          top: 100%;
+        }
       }
     }
   }
