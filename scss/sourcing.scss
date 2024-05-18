@@ -1,5 +1,5 @@
 .section-table-crop {
-  transition: all 0.3s ease-in-out;
+  transition: all 7s linear;
   h2 {
     margin-bottom: 12px;
   }
@@ -10,7 +10,10 @@
     .tab-content,
     .tab-pane,
     .tab-pane .img {
-      transition: all 0.3s ease-in-out;
+      transition: all 7s linear;
+      img {
+        transition: all 7s linear;
+      }
     }
     .tab-content {
       padding-bottom: 0;
@@ -18,11 +21,28 @@
   }
 }
 .section-raw-material {
+  transition: all 1s linear infinite;
   h2 {
     margin-bottom: 6px;
   }
   h3 {
     max-width: 750px;
     margin: 0 auto;
+  }
+}
+
+.tab-pane.active {
+  // animation: slide-down 2s ease-out;
+  transition: all 1s linear infinite;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

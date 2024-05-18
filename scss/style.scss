@@ -49,30 +49,25 @@ h1 {
   color: $orangeColor;
 }
 h2 {
-  // font-weight: bold;
   font-weight: 600;
   font-size: 32px;
   color: $orangeColor;
 }
 h3 {
-  // font-weight: 500;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 23px;
   color: $orangeColor;
 }
 h4 {
-  // font-weight: bold;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 19px;
 }
 h5 {
   font-size: 16px;
-  // font-weight: bold;
   font-weight: 600;
 }
 .card-title {
   font-size: 28px;
-  // font-weight: bold;
   font-weight: 500;
   line-height: 1.2;
   transition: font-size 0.5s ease-in-out;
@@ -109,7 +104,6 @@ a {
   @include btn-brand-color;
 }
 //================= Tab Style =================
-
 .tab-style.tabs-content {
   border-radius: 5px;
   overflow: hidden;
@@ -134,7 +128,7 @@ a {
       border: unset;
       // border-bottom: 3px solid $orangeColor;
       // font-weight: bold;
-      font-weight: 600;
+      // font-weight: 600;
       font-style: normal;
       color: $orangeColor;
     }
@@ -162,7 +156,6 @@ a {
     }
   }
 }
-
 //=================  Background =================
 .bg-gray-main {
   background-color: $bgGray1;
@@ -351,7 +344,6 @@ a {
     }
   }
 }
-
 //=================  Section Haft Haft =================
 .section-haft-haft {
   display: flex;
@@ -410,14 +402,53 @@ a {
 }
 //=================  RESPONSIVE =================
 @media only screen and (max-width: 1279.98px) {
+  //=================  Container =================
   .container-1152 {
     padding: 0 15px;
   }
+  //=================  List news =================
   .list-news {
     .footer-item {
       .links {
         a {
           transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  //=================  Section Haft Haft =================
+  .section-haft-haft {
+    .haft-text {
+      width: 60%;
+    }
+    .haft-img {
+      width: 40%;
+    }
+  }
+}
+@media only screen and (max-width: 1023.98px) {
+  //=================  Section Haft Haft =================
+  .section-haft-haft {
+    flex-direction: column;
+    .haft-text {
+      width: 100% !important;
+      order: 2;
+      h2,
+      h1 {
+        text-align: center;
+      }
+    }
+    .haft-img {
+      width: 100% !important;
+      order: 1;
+    }
+    .haft-haft-part {
+      flex-direction: column;
+      gap: 16px;
+      .haft-part {
+        width: auto !important;
+        h4 {
+          margin-bottom: 8px;
         }
       }
     }
@@ -491,7 +522,6 @@ a {
     }
   }
 }
-
 .nav-link:focus-visible {
   box-shadow: unset;
 }

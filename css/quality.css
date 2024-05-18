@@ -2,14 +2,19 @@
   padding: 0;
 }
 .section-quality-team .section-haft-haft .haft-text {
-  width: 41.6666666667%;
+  width: 43.5%;
+  gap: 0;
 }
-.section-quality-team .section-haft-haft .haft-text h2,
+.section-quality-team .section-haft-haft .haft-text h1,
 .section-quality-team .section-haft-haft .haft-text p {
   margin-bottom: 24px;
 }
 .section-quality-team .section-haft-haft .haft-img {
-  width: 58.3333333333%;
+  width: 56.5%;
+  text-align: center;
+}
+.section-quality-team .section-haft-haft .haft-img img {
+  max-width: 513px;
 }
 
 .section-quality-assurance .section-haft-haft .haft-haft-part .haft-part {
@@ -148,4 +153,13 @@
   left: unset;
   right: 31px;
   left: unset;
+}
+
+@media only screen and (max-width: 1279.98px) {
+  .section-quality-team .section-haft-haft .haft-text {
+    width: 60%;
+  }
+  .section-quality-team .section-haft-haft .haft-img {
+    width: 40%;
+  }
 }

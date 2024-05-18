@@ -3,14 +3,19 @@
   .section-haft-haft {
     padding: 0;
     .haft-text {
-      width: calc(5 / 12 * 100%);
-      h2,
+      width: 43.5%;
+      gap: 0;
+      h1,
       p {
         margin-bottom: 24px;
       }
     }
     .haft-img {
-      width: calc(7 / 12 * 100%);
+      width: calc(100% - 43.5%);
+      text-align: center;
+      img {
+        max-width: 513px;
+      }
     }
   }
 }
@@ -164,6 +169,19 @@
       left: unset;
       right: 31px;
       left: unset;
+    }
+  }
+}
+
+@media only screen and (max-width: 1279.98px) {
+  .section-quality-team {
+    .section-haft-haft {
+      .haft-text {
+        width: 60%;
+      }
+      .haft-img {
+        width: 40%;
+      }
     }
   }
 }

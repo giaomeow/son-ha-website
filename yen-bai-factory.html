@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sourcing</title>
+    <title>Yen Bai Factory</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -10,11 +10,6 @@
     />
     <meta name="description" content="Free Web tutorials" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <!-- Font -->
-    <link
-      href="https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98777,98776,98772,98773,98775,98770,98771,98769"
-      rel="stylesheet"
-    />
 
     <!-- add icon link -->
     <link
@@ -23,13 +18,19 @@
       type="image/x-icon"
     />
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS v5.3.2 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- Font -->
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98777,98776,98772,98773,98775,98770,98771,98769"
+      rel="stylesheet"
+    />
+
     <!-- Slick Carousel -->
     <link
       rel="stylesheet"
@@ -45,13 +46,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- My css -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/sourcing.css" />
+    <link rel="stylesheet" href="./css/yen-bai-factory.css" />
   </head>
 
   <body>
-    <header>
+    <header class="fixed-top nav-fixed">
       <div class="container-1152">
         <!-- place navbar here -->
         <nav class="navbar navbar-expand-xl bg-body-tertiary">
@@ -84,6 +86,7 @@
                 />
                 <img src="./assets/icons/find.svg" type="submit" />
               </form>
+              <!-- Desktop -->
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <!-- home -->
                 <li class="nav-item">
@@ -92,17 +95,18 @@
                 <!-- about-us -->
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle active"
+                    class="nav-link dropdown-toggle"
                     href=""
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="dropdownAboutUs"
                   >
                     About-us
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu" aria-labelledby="dropdownAboutUs">
                     <li>
-                      <a class="dropdown-item active" href="/who-we-are.html"
+                      <a class="dropdown-item" href="/who-we-are.html"
                         >Who we are</a
                       >
                     </li>
@@ -112,22 +116,17 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/mission.html"
+                      <a class="dropdown-item" href="/ceo-message.html"
                         >CEO's Message</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/mission.html"
+                      <a class="dropdown-item" href="/certifications.html"
                         >Food Safety & Certifications</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/mission.html">News</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/mission.html"
-                        >Company Video</a
-                      >
+                      <a class="dropdown-item" href="/news.html">News</a>
                     </li>
                   </ul>
                 </li>
@@ -139,6 +138,7 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    id="dropdownAboutUs"
                   >
                     Products
                   </a>
@@ -180,7 +180,7 @@
                 <!-- resources -->
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle active"
                     href=""
                     role="button"
                     data-bs-toggle="dropdown"
@@ -195,8 +195,26 @@
                     <li>
                       <a class="dropdown-item" href="#">Sourcing</a>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Factory</a>
+                    <li class="nav-item dropdown drop-down02">
+                      <a
+                        class="nav-link dropdown-toggle dropdown-item active"
+                        href=""
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Factory
+                      </a>
+                      <ul class="dropdown-menu sub-menu02">
+                        <li>
+                          <a class="dropdown-item active" href="#"
+                            >Bac Ninh Factory</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Yen Bai Factory</a>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </li>
@@ -249,227 +267,40 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="/">Home</a></li>
-              <li class="breadcrumb-item"><a href="">Resources</a></li>
+              <li class="breadcrumb-item"><a>Resources</a></li>
+              <li class="breadcrumb-item"><a>Factory</a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                Sourcing
+                Yen Bai Factory
               </li>
             </ol>
           </nav>
         </div>
       </div>
-      <!-- ============================== BANNER ============================== -->
-      <section class="section-banner pb-24">
+      <!-- ============================== BAC NINH FACTORY ============================== -->
+      <section class="yen-bai-factory pb-24">
         <div class="container-1152">
-          <img src="./assets/img/sourcing-page/cong-nhan.jpeg" width="100%" />
-        </div>
-      </section>
-      <!-- ============================== TABLE CROP ============================== -->
-      <section class="section-table-crop pt-24">
-        <div class="container-1152">
-          <h2 class="text-center">Crop Table of 2023</h2>
-          <div class="tab-style tabs-content">
-            <nav>
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <h4
-                  class="nav-link active"
-                  id="nav-cassia-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#nav-cassia"
-                  type="button"
-                  role="tab"
-                  aria-controls="nav-cassia"
-                  aria-selected="true"
-                  crop-type="cassia"
-                >
-                  Cassia
-                </h4>
-                <h4
-                  class="nav-link"
-                  id="nav-pepper-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#nav-pepper"
-                  type="button"
-                  role="tab"
-                  aria-controls="nav-pepper"
-                  aria-selected="false"
-                  crop-type="pepper"
-                >
-                  Pepper
-                </h4>
-                <h4
-                  class="nav-link"
-                  id="nav-cassia-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#nav-cassia"
-                  type="button"
-                  role="tab"
-                  aria-controls="nav-cassia"
-                  aria-selected="false"
-                  crop-type="anise"
-                >
-                  Star Anise
-                </h4>
-              </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-              <!-- Cassia -->
-              <div
-                class="tab-pane show active"
-                id="nav-cassia"
-                role="tabpanel"
-                aria-labelledby="nav-cassia-tab"
-                tabindex="0"
-              >
-                <div class="img">
-                  <img
-                    src="./assets/img/sourcing-page/crop-1.jpeg"
-                    width="100%"
-                  />
-                </div>
-              </div>
-              <!-- Cassia -->
-              <div
-                class="tab-pane"
-                id="nav-pepper"
-                role="tabpanel"
-                aria-labelledby="nav-pepper-tab"
-                tabindex="0"
-              >
-                <div class="img">
-                  <img
-                    src="./assets/img/sourcing-page/crop-2.jpeg"
-                    width="100%"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ============================== OUR RAW MATERIALS ============================== -->
-      <section class="section-raw-material pt-24 pb-24 bg-gray-main">
-        <div class="container-1152">
-          <h2 class="text-center">Our Raw Materials</h2>
-          <h3 class="text-center">
-            Elevate Your Experience with Products Made from Carefully Sourced
-            Raw Materials
-          </h3>
-
-          <div class="section-haft-haft">
-            <div class="haft-text">
+          <div class="row">
+            <div class="col-5 text">
+              <h1 class="mb-24">Yen Bai Factory</h1>
               <p>
-                In our pursuit of excellence, we transcend mere business
-                transactions, cultivating enduring partnerships with our
-                agricultural collaborators. Our dedicated surveyors go above and
-                beyond routine crop inspections; they actively foster meaningful
-                relationships, exchange invaluable knowledge, and ensure mutual
-                success. Beyond the daily visits that extend beyond conventional
-                quality assessments, they embody a steadfast commitment to
-                collective growth and the attainment of superior outcomes. These
-                interactions transcend the transactional and reflect our deeply
-                rooted belief in the power of collaborative efforts for
-                sustained prosperity. Through these genuine connections, we not
-                only monitor and enhance the quality of our raw materials but
-                also contribute to the prosperity of our agricultural partners,
-                forging a synergy that goes beyond the boundaries of
-                conventional business engagements.
+                Situated within the core of the most extensive Cassia
+                cultivation region in Vietnam, approximately 175 kilometers from
+                Hanoi, the Yen Bai processing branch maintains a substantial
+                operational footprint encompassing 3 hectares. This
+                strategically located facility serves as the primary sourcing
+                and pre-processing hub for Cassia/Cinnamon, supporting the
+                livelihoods of over 200 workers within the local farming
+                community.
               </p>
             </div>
-            <div class="haft-img">
-              <img src="./assets/img/sourcing-page/raw-material.jpeg" />
+            <div class="col-7 img">
+              <div>
+                <img
+                  src="./assets/img/yen-bai-factory/yen-bai-factory.jpeg"
+                  class="w-100"
+                />
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- ============================== OUR RAW MATERIALS MAP ============================== -->
-      <section class="section-raw-material-map pt-48 pb-48">
-        <div class="container-1152">
-          <h2 class="text-center">
-            Embark on a Flavorful Journey As You Explore<br />
-            Our Raw Material Map
-          </h2>
-          <!-- <h4 class="text-center fw-normal">
-            Fascinated by the origins of your favorite spices? Immerse yourself
-            in the rich tapestry of flavors through our interactive raw material
-            map! Click the buttons below to embark on a captivating journey,
-            tracing the path of your cherished seasonings from lush, verdant
-            fields to the heart of your kitchen table. Uncover the aromatic
-            secrets, explore the diverse landscapes where each spice blossoms,
-            and indulge in a sensory adventure that brings the essence of these
-            flavors right to your fingertips.
-          </h4>
-          <div class="tab-raw-material-map">
-            <div class="tab-select">
-              <p>
-                In our pursuit of excellence, we transcend mere business
-                transactions, cultivating enduring partnerships with our
-                agricultural collaborators. Our dedicated surveyors go above and
-                beyond routine crop inspections; they actively foster meaningful
-                relationships, exchange invaluable knowledge, and ensure mutual
-                success. Beyond the daily visits that extend beyond conventional
-                quality assessments, they embody a steadfast commitment to
-                collective growth and the attainment of superior outcomes. These
-                interactions transcend the transactional and reflect our deeply
-                rooted belief in the power of collaborative efforts for
-                sustained prosperity. Through these genuine connections, we not
-                only monitor and enhance the quality of our raw materials but
-                also contribute to the prosperity of our agricultural partners,
-                forging a synergy that goes beyond the boundaries of
-                conventional business engagements.
-              </p>
-            </div>
-            <div class="map">
-              <img src="./assets/img/sourcing-page/raw-material.jpeg" />
-            </div>
-          </div> -->
-        </div>
-      </section>
-      <!-- ============================== OUR SOURCING TEAM ============================== -->
-      <section class="section-sourcing-team pt-24 pb-24 bg-gray-main">
-        <div class="container-1152">
-          <h2 class="text-center">Our Sourcing Team</h2>
-          <div class="section-haft-haft">
-            <div class="haft-text">
-              <p>
-                Going beyond mere transactional relationships, Son Ha Spice
-                actively nurtures robust partnerships within its farmer network,
-                ensuring both product quality and community development. Our
-                inspectors serve as liaisons, educators, and collaborators,
-                establishing trust and fostering mutual success through
-                consistent engagement. Our commitment extends beyond daily
-                visits for routine quality checks. Instead, these visits
-                symbolize a proactive investment in shared growth. Surveyors
-                diligently monitor crop health, provide essential agronomic
-                guidance, and swiftly address potential issues in real-time.
-                Simultaneously, farmers share their profound understanding of
-                local conditions and traditional practices, offering invaluable
-                insights that shape our sustainable cultivation strategies. This
-                is the foundation for a thriving partnership, creating a dynamic
-                exchange that goes far beyond the boundaries of conventional
-                supplier relationships.
-              </p>
-            </div>
-            <div class="haft-img">
-              <img src="./assets/img/sourcing-page/sourcing-team.jpeg" />
-            </div>
-          </div>
-          <p>
-            This synergistic partnership cultivates optimal growing conditions,
-            minimizes waste, and guarantees premium yields. The ultimate result
-            is a top-tier product that brings benefits to both farmers and
-            consumers alike. Son Ha Spice is dedicated to sourcing only the
-            finest, ethically grown spices. This commitment ensures not only
-            consistent quality and flavor but also empowers local communities
-            and promotes responsible agricultural practices. Through this
-            approach, we strive to create a positive impact, fostering
-            sustainability, and delivering a product that reflects our
-            unwavering dedication to excellence and social responsibility.
-          </p>
-          <div class="pt-24">
-            <img
-              src="./assets/img/sourcing-page/cong-nhan-2.jpeg"
-              width="100%"
-            />
           </div>
         </div>
       </section>
@@ -612,18 +443,7 @@
         </div>
       </div>
     </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
     <!-- Jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -638,6 +458,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
     <!-- Slick Carousel -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
@@ -645,8 +477,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <!-- My Script -->
     <script src="./js/main.js"></script>
-    <script src="js/sourcing.js"></script>
   </body>
 </html>

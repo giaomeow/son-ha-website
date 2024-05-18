@@ -1,0 +1,51 @@
+.bac-ninh-factory .text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.bac-ninh-factory .text h1 {
+  text-transform: uppercase;
+}
+.bac-ninh-factory .text .text-footer {
+  display: flex;
+  gap: 84px;
+}
+.bac-ninh-factory .text .text-footer .parameter {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+.bac-ninh-factory .text .text-footer .parameter .item .card-title {
+  color: #ea6f18;
+  font-weight: 600;
+}
+.bac-ninh-factory .text .text-footer .certificate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bac-ninh-factory .text .text-footer .certificate img {
+  max-width: 98px;
+}
+
+.section-title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 12px;
+}
+.section-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 auto;
+  width: 564px;
+  border-top: 1px solid black;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.section-haft-haft {
+  padding: 36px 0;
+  align-items: flex-start;
+}

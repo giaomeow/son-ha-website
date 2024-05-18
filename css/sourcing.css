@@ -1,5 +1,5 @@
 .section-table-crop {
-  transition: all 0.3s ease-in-out;
+  transition: all 7s linear;
 }
 .section-table-crop h2 {
   margin-bottom: 12px;
@@ -10,16 +10,39 @@
 .section-table-crop .tab-style.tabs-content .tab-content,
 .section-table-crop .tab-style.tabs-content .tab-pane,
 .section-table-crop .tab-style.tabs-content .tab-pane .img {
-  transition: all 0.3s ease-in-out;
+  transition: all 7s linear;
+}
+.section-table-crop .tab-style.tabs-content .tab-content img,
+.section-table-crop .tab-style.tabs-content .tab-pane img,
+.section-table-crop .tab-style.tabs-content .tab-pane .img img {
+  transition: all 7s linear;
 }
 .section-table-crop .tab-style.tabs-content .tab-content {
   padding-bottom: 0;
 }
 
+.section-raw-material {
+  transition: all 1s linear infinite;
+}
 .section-raw-material h2 {
   margin-bottom: 6px;
 }
 .section-raw-material h3 {
   max-width: 750px;
   margin: 0 auto;
+}
+
+.tab-pane.active {
+  transition: all 1s linear infinite;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
