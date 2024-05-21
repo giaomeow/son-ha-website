@@ -49,3 +49,37 @@
   padding: 36px 0;
   align-items: flex-start;
 }
+
+@media only screen and (max-width: 1280.98px) {
+  .section-haft-haft {
+    align-items: center;
+  }
+  .bac-ninh-factory .text {
+    width: 50%;
+  }
+  .bac-ninh-factory .img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1023.98px) {
+  .bac-ninh-factory .row {
+    --bs-gutter-y: 16px;
+  }
+  .bac-ninh-factory .text {
+    width: 100%;
+  }
+  .bac-ninh-factory .img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bac-ninh-factory {
+    padding-bottom: 0;
+  }
+  .bac-ninh-factory .text .text-footer {
+    gap: 40px;
+  }
+  .section-haft-haft {
+    padding: 24px 0;
+  }
+}

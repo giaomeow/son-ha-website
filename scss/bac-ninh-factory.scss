@@ -54,3 +54,45 @@
   padding: 36px 0;
   align-items: flex-start;
 }
+
+@media only screen and (max-width: 1280.98px) {
+  .section-haft-haft {
+    align-items: center;
+  }
+  .bac-ninh-factory {
+    .text {
+      width: 50%;
+    }
+    .img {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1023.98px) {
+  .bac-ninh-factory {
+    .row {
+      --bs-gutter-y: 16px;
+    }
+    .text {
+      width: 100%;
+    }
+    .img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bac-ninh-factory {
+    padding-bottom: 0;
+    .text {
+      .text-footer {
+        gap: 40px;
+      }
+    }
+  }
+  .section-haft-haft {
+    padding: 24px 0;
+  }
+}
