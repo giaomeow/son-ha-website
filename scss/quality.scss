@@ -227,4 +227,50 @@
   .list-img-guarantees {
     grid-template-columns: repeat(5, 1fr);
   }
+  .section-laboratory .section-laboratory-carousel .item .item-content-carousel,
+  .section-laboratory .section-laboratory-carousel .item .thumbnail {
+    max-height: 500px;
+  }
+  .section-laboratory .section-laboratory-carousel .item .thumbnail img {
+    width: 100%;
+    object-position: center;
+  }
+  .section-laboratory .section-laboratory-carousel .item .thumbnail .overlay {
+    display: none;
+  }
+  .section-laboratory .section-laboratory-carousel .item .slide-num {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .section-laboratory .section-laboratory-carousel .item .item-content-carousel,
+  .section-laboratory .section-laboratory-carousel .item .thumbnail {
+    max-height: unset;
+    height: 500px;
+  }
+  .section-laboratory .section-laboratory-carousel .item .thumbnail img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .section-laboratory .section-laboratory-carousel .slick-prev {
+    right: 61px;
+  }
+  .section-laboratory .section-laboratory-carousel .slick-arrow {
+    bottom: 7px;
+  }
+  .section-laboratory .section-laboratory-carousel .slick-next {
+    right: 15px;
+  }
+  .section-laboratory
+    .section-laboratory-carousel
+    .item
+    .item-content-carousel
+    .item-footer
+    .row {
+    --bs-gutter-x: 5px;
+  }
+  .list-img-guarantees {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
