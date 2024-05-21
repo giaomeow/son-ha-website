@@ -5,3 +5,28 @@
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 1280.98px) {
+  .yen-bai-factory {
+    .text {
+      width: 50%;
+    }
+    .img {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1023.98px) {
+  .yen-bai-factory {
+    .row {
+      --bs-gutter-y: 16px;
+    }
+    .text {
+      width: 100%;
+    }
+    .img {
+      width: 100%;
+    }
+  }
+}
