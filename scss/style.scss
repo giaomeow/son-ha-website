@@ -1,6 +1,5 @@
 @import "./variable";
 @import "./components";
-// @import "./fontface";
 //================= reset css =================
 * {
   padding: 0;
@@ -42,7 +41,8 @@ main {
   overflow-x: hidden;
 }
 //=================  Text =================
-h1 {
+h1,
+h2.heading1 {
   // font-weight: bold;
   font-weight: 600;
   font-size: 36px;
@@ -53,6 +53,7 @@ h2 {
   font-size: 32px;
   color: $orangeColor;
 }
+
 h3 {
   font-weight: 400;
   font-size: 23px;
@@ -125,7 +126,7 @@ a {
     font-weight: 500;
     &.active {
       background-color: transparent;
-      border: unset;
+      border-color: transparent;
       // border-bottom: 3px solid $orangeColor;
       // font-weight: bold;
       // font-weight: 600;
@@ -139,7 +140,6 @@ a {
   .tab-content {
     padding: 12px 12px 24px 12px;
     background-color: #fff;
-
     .row {
       width: 100%;
       align-items: center;
@@ -458,7 +458,8 @@ a {
   main {
     padding-top: 88.45px;
   }
-  h1 {
+  h1,
+  h2.heading1 {
     font-size: 25.35px;
   }
   h2 {
@@ -487,6 +488,12 @@ a {
   // Margin
   .mb_79 {
     margin-bottom: 39px;
+  }
+  .pt-48 {
+    padding-top: 24px;
+  }
+  .pb-48 {
+    padding-bottom: 24px;
   }
   //=================  Form =================
   .form-group-style {

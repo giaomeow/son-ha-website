@@ -385,7 +385,8 @@ main {
   overflow-x: hidden;
 }
 
-h1 {
+h1,
+h2.heading1 {
   font-weight: 600;
   font-size: 36px;
   color: #ea6f18;
@@ -500,7 +501,7 @@ a {
 }
 .tab-style.tabs-content .nav-link.active {
   background-color: transparent;
-  border: unset;
+  border-color: transparent;
   font-style: normal;
   color: #ea6f18;
 }
@@ -828,7 +829,8 @@ a {
   main {
     padding-top: 88.45px;
   }
-  h1 {
+  h1,
+  h2.heading1 {
     font-size: 25.35px;
   }
   h2 {
@@ -854,6 +856,12 @@ a {
   }
   .mb_79 {
     margin-bottom: 39px;
+  }
+  .pt-48 {
+    padding-top: 24px;
+  }
+  .pb-48 {
+    padding-bottom: 24px;
   }
   .form-group-style {
     margin-bottom: 26px;

@@ -111,6 +111,7 @@
       .thumbnail {
         object-fit: contain;
         position: relative;
+        height: 100%;
         .overlay {
           height: 100px;
           position: absolute;
@@ -183,5 +184,47 @@
         width: 40%;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-laboratory {
+    padding: 24px 0;
+    .section-laboratory-carousel {
+      background-color: #f1f1f1 !important;
+      .item {
+        height: max-content;
+        padding-left: 0;
+        align-items: center;
+        gap: 20px;
+        .item-content-carousel {
+          width: 60%;
+        }
+        .thumbnail {
+          height: 100%;
+          width: 40%;
+          img {
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1023.98px) {
+  .section-laboratory {
+    .section-laboratory-carousel {
+      .item {
+        display: block;
+        .item-content-carousel,
+        .thumbnail {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .list-img-guarantees {
+    grid-template-columns: repeat(5, 1fr);
   }
 }

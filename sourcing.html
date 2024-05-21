@@ -11,6 +11,7 @@
     <meta name="description" content="Free Web tutorials" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <!-- Font -->
+    <!-- Font -->
     <link
       href="https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98777,98776,98772,98773,98775,98770,98771,98769"
       rel="stylesheet"
@@ -266,7 +267,7 @@
       <!-- ============================== TABLE CROP ============================== -->
       <section class="section-table-crop pt-24">
         <div class="container-1152">
-          <h2 class="text-center">Crop Table of 2023</h2>
+          <h2 class="text-center heading1">Crop Table of 2023</h2>
           <div class="tab-style tabs-content">
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -298,12 +299,12 @@
                 </h4>
                 <h4
                   class="nav-link"
-                  id="nav-cassia-tab"
+                  id="nav-star-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#nav-cassia"
+                  data-bs-target="#nav-star"
                   type="button"
                   role="tab"
-                  aria-controls="nav-cassia"
+                  aria-controls="nav-star"
                   aria-selected="false"
                   crop-type="anise"
                 >
@@ -342,6 +343,21 @@
                   />
                 </div>
               </div>
+              <!-- Cassia -->
+              <div
+                class="tab-pane"
+                id="nav-star"
+                role="tabpanel"
+                aria-labelledby="nav-star-tab"
+                tabindex="0"
+              >
+                <div class="img">
+                  <img
+                    src="./assets/img/sourcing-page/crop-3.jpeg"
+                    width="100%"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -349,7 +365,7 @@
       <!-- ============================== OUR RAW MATERIALS ============================== -->
       <section class="section-raw-material pt-24 pb-24 bg-gray-main">
         <div class="container-1152">
-          <h2 class="text-center">Our Raw Materials</h2>
+          <h2 class="text-center heading1">Our Raw Materials</h2>
           <h3 class="text-center">
             Elevate Your Experience with Products Made from Carefully Sourced
             Raw Materials
@@ -384,11 +400,11 @@
       <!-- ============================== OUR RAW MATERIALS MAP ============================== -->
       <section class="section-raw-material-map pt-48 pb-48">
         <div class="container-1152">
-          <h2 class="text-center">
+          <h2 class="text-center heading1">
             Embark on a Flavorful Journey As You Explore<br />
             Our Raw Material Map
           </h2>
-          <!-- <h4 class="text-center fw-normal">
+          <p class="text-center fw-normal">
             Fascinated by the origins of your favorite spices? Immerse yourself
             in the rich tapestry of flavors through our interactive raw material
             map! Click the buttons below to embark on a captivating journey,
@@ -397,37 +413,127 @@
             secrets, explore the diverse landscapes where each spice blossoms,
             and indulge in a sensory adventure that brings the essence of these
             flavors right to your fingertips.
-          </h4>
-          <div class="tab-raw-material-map">
-            <div class="tab-select">
-              <p>
-                In our pursuit of excellence, we transcend mere business
-                transactions, cultivating enduring partnerships with our
-                agricultural collaborators. Our dedicated surveyors go above and
-                beyond routine crop inspections; they actively foster meaningful
-                relationships, exchange invaluable knowledge, and ensure mutual
-                success. Beyond the daily visits that extend beyond conventional
-                quality assessments, they embody a steadfast commitment to
-                collective growth and the attainment of superior outcomes. These
-                interactions transcend the transactional and reflect our deeply
-                rooted belief in the power of collaborative efforts for
-                sustained prosperity. Through these genuine connections, we not
-                only monitor and enhance the quality of our raw materials but
-                also contribute to the prosperity of our agricultural partners,
-                forging a synergy that goes beyond the boundaries of
-                conventional business engagements.
-              </p>
+          </p>
+          <!-- Map -->
+          <div class="tab-maps">
+            <div class="tabs-list">
+              <ul>
+                <li class="active" data="cassia">Cassia</li>
+                <li class="active" data="cassiaAndStar">Cassia & Star Anise</li>
+                <li class="active" data="pepper">Pepper</li>
+                <li class="active" data="star">Star Anise</li>
+              </ul>
             </div>
-            <div class="map">
-              <img src="./assets/img/sourcing-page/raw-material.jpeg" />
+            <div class="map-img">
+              <img src="./assets/img/sourcing-page/map.png" />
+              <!-- List  -->
+              <div class="item-site d-none d-lg-block" id="name1">
+                <div class="position-relative">
+                  <div class="site">
+                    <p class="name">Ha Giang</p>
+                    <p class="ta">Total Area/harvested (ha):</p>
+                    <p class="op">Output (tons):</p>
+                    <p class="ht">Harvest time:</p>
+                  </div>
+                  <div class="line after right"></div>
+                </div>
+              </div>
+              <div class="item-site d-none d-lg-block" id="name2">
+                <div class="position-relative">
+                  <div class="site">
+                    <p class="name">Lao Cai</p>
+                    <p class="ta">Total Area/harvested (ha):</p>
+                    <p class="op">Output (tons):</p>
+                    <p class="ht">Harvest time:</p>
+                  </div>
+                  <div class="line after right"></div>
+                </div>
+              </div>
+              <div class="item-site d-none d-lg-block" id="name3">
+                <div class="position-relative">
+                  <div class="site">
+                    <p class="name">Yen Bai</p>
+                    <p class="ta">Total Area/harvested (ha):</p>
+                    <p class="op">Output (tons):</p>
+                    <p class="ht">Harvest time:</p>
+                  </div>
+                  <div class="line after right"></div>
+                </div>
+              </div>
+              <div class="item-site d-none d-lg-block" id="name4">
+                <div class="position-relative">
+                  <div class="site">
+                    <p class="name">Thanh Hoa</p>
+                    <p class="ta">Total Area/harvested (ha):</p>
+                    <p class="op">Output (tons):</p>
+                    <p class="ht">Harvest time:</p>
+                  </div>
+                  <div class="line after right"></div>
+                </div>
+              </div>
+              <div class="item-site d-none d-lg-block" id="name5">
+                <div class="position-relative">
+                  <div class="site">
+                    <p class="name">Quang Nam</p>
+                    <p class="ta">Total Area/harvested (ha):</p>
+                    <p class="op">Output (tons):</p>
+                    <p class="ht">Harvest time:</p>
+                  </div>
+                  <div class="line after right"></div>
+                </div>
+              </div>
+              <div class="item-site d-none d-lg-block" id="name6">
+                <div class="position-relative">
+                  <div class="site">
+                    <p class="name">Tuyen Quang</p>
+                    <p class="ta">Total Area/harvested (ha):</p>
+                    <p class="op">Output (tons):</p>
+                    <p class="ht">Harvest time:</p>
+                  </div>
+                  <div class="line before left"></div>
+                </div>
+              </div>
+              <div class="item-site d-none d-lg-block" id="name7">
+                <div class="position-relative">
+                  <div class="site">
+                    <p class="name">Phu Tho</p>
+                    <p class="ta">Total Area/harvested (ha):</p>
+                    <p class="op">Output (tons):</p>
+                    <p class="ht">Harvest time:</p>
+                  </div>
+                  <div class="line before left"></div>
+                </div>
+              </div>
+              <div class="item-site d-none d-lg-block" id="name8">
+                <div class="position-relative">
+                  <div class="site">
+                    <p class="name">Hoa Binh</p>
+                    <p class="ta">Total Area/harvested (ha):</p>
+                    <p class="op">Output (tons):</p>
+                    <p class="ht">Harvest time:</p>
+                  </div>
+                  <div class="line before left"></div>
+                </div>
+              </div>
+              <div class="item-site d-none d-lg-block" id="name9">
+                <div class="position-relative">
+                  <div class="site">
+                    <p class="name">Quang Ngai</p>
+                    <p class="ta">Total Area/harvested (ha):</p>
+                    <p class="op">Output (tons):</p>
+                    <p class="ht">Harvest time:</p>
+                  </div>
+                  <div class="line before left"></div>
+                </div>
+              </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </section>
       <!-- ============================== OUR SOURCING TEAM ============================== -->
-      <section class="section-sourcing-team pt-24 pb-24 bg-gray-main">
+      <section class="section-sourcing-team pt-24 bg-gray-main">
         <div class="container-1152">
-          <h2 class="text-center">Our Sourcing Team</h2>
+          <h2 class="text-center heading1">Our Sourcing Team</h2>
           <div class="section-haft-haft">
             <div class="haft-text">
               <p>
@@ -436,17 +542,19 @@
                 ensuring both product quality and community development. Our
                 inspectors serve as liaisons, educators, and collaborators,
                 establishing trust and fostering mutual success through
-                consistent engagement. Our commitment extends beyond daily
-                visits for routine quality checks. Instead, these visits
-                symbolize a proactive investment in shared growth. Surveyors
-                diligently monitor crop health, provide essential agronomic
-                guidance, and swiftly address potential issues in real-time.
-                Simultaneously, farmers share their profound understanding of
-                local conditions and traditional practices, offering invaluable
-                insights that shape our sustainable cultivation strategies. This
-                is the foundation for a thriving partnership, creating a dynamic
-                exchange that goes far beyond the boundaries of conventional
-                supplier relationships.
+                consistent engagement.
+              </p>
+              <p>
+                Our commitment extends beyond daily visits for routine quality
+                checks. Instead, these visits symbolize a proactive investment
+                in shared growth. Surveyors diligently monitor crop health,
+                provide essential agronomic guidance, and swiftly address
+                potential issues in real-time. Simultaneously, farmers share
+                their profound understanding of local conditions and traditional
+                practices, offering invaluable insights that shape our
+                sustainable cultivation strategies. This is the foundation for a
+                thriving partnership, creating a dynamic exchange that goes far
+                beyond the boundaries of conventional supplier relationships.
               </p>
             </div>
             <div class="haft-img">
@@ -647,6 +755,6 @@
     ></script>
     <!-- My Script -->
     <script src="./js/main.js"></script>
-    <script src="js/sourcing.js"></script>
+    <script src="./js/sourcing.js"></script>
   </body>
 </html>
