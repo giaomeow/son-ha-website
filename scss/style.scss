@@ -1,3 +1,4 @@
+@import "./font-face";
 @import "./variable";
 @import "./components";
 //================= reset css =================
@@ -7,11 +8,10 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "SF Pro Display", sans-serif;
+  font-family: "SF Pro Display";
   letter-spacing: 0.6px;
   font-size: 20px;
   line-height: 1.2;
-  // font-weight: 500;
   font-weight: 400;
   color: $textNormal;
   max-width: 1920px;
@@ -53,7 +53,6 @@ h2 {
   font-size: 32px;
   color: $orangeColor;
 }
-
 h3 {
   font-weight: 400;
   font-size: 23px;
@@ -76,10 +75,14 @@ h5 {
     transition: font-size 0.5s ease-in-out;
   }
 }
+//================= Link =================
 a {
   text-decoration: none;
   color: unset;
   cursor: pointer;
+}
+.nav-link:focus-visible {
+  box-shadow: unset;
 }
 //================= Margin =================
 .mb_79 {
@@ -400,6 +403,86 @@ a {
     }
   }
 }
+
+//================= Start List Product =================
+.list-product {
+  padding-top: 48px;
+  margin-bottom: 48px;
+  .title {
+    margin-bottom: 50px;
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  .card-title {
+    color: white;
+  }
+  .list-product-type {
+    .row {
+      --bs-gutter-x: 24px;
+      --bs-gutter-y: 24px;
+    }
+    .product-type-item {
+      > a {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .card-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        // width: calc(100% - 24px);
+        padding: 20.5px 20px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.645) 80%
+        );
+        span {
+          opacity: 0;
+          border-radius: 50%;
+          width: 35px;
+          aspect-ratio: 1/1;
+          border: 1px solid transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s;
+          img {
+            width: 16.8px;
+            transition: all 0.3s;
+          }
+          &:hover {
+            background-color: $orangeColor;
+            border: 1px solid $orangeColor !important;
+          }
+        }
+      }
+      &:hover {
+        .card-title {
+          span {
+            opacity: 1;
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+  }
+}
+//================= End List Product =================
+
 //=================  RESPONSIVE =================
 @media only screen and (max-width: 1279.98px) {
   //=================  Container =================
@@ -426,6 +509,7 @@ a {
     }
   }
 }
+
 @media only screen and (max-width: 1023.98px) {
   //=================  Section Haft Haft =================
   .section-haft-haft {
@@ -454,6 +538,7 @@ a {
     }
   }
 }
+
 @media only screen and (max-width: 767.98px) {
   main {
     padding-top: 88.45px;
@@ -528,7 +613,4 @@ a {
       }
     }
   }
-}
-.nav-link:focus-visible {
-  box-shadow: unset;
 }

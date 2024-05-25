@@ -1,4 +1,61 @@
+/* Generated for Chrome v124.0.0.0 on Macintosh */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./../assets/font/SF-Pro-Display/5e4509d3e53b2e3faf7874bf6078aaf0d86ba9d6a8ec3079cc872b7b1d4b338b.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./../assets/font/SF-Pro-Display/9750654d035b4d4d577ab1db20918077ad19a76bba8a65e6e690802912c3d82f.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./../assets/font/SF-Pro-Display/104802c6c6dc7a3d84d629a79b78046847a9cc8caac8f73ea07e2dddfb5e31ce.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./../assets/font/SF-Pro-Display/5bc1142d5fc993d2ec21a8fa93a17718818e8172dffc649b7d8a3ab459cfbf9c.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./../assets/font/SF-Pro-Display/b8da67821e588e3ee5516083d99f1d9907c23a24fcb52dfb3c57cd38924dcef7.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./../assets/font/SF-Pro-Display/e80a61b2cbc6d6b3b3ed8b50bcd8f6a89f8f5b69460e03f47defe0554c3220d2.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./../assets/font/SF-Pro-Display/32b6db04338d853de4148e775afcacadfb2d0bd3e8f10192916f6688f34c6005.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./../assets/font/SF-Pro-Display/9c8773b18df092674df6b952c940fdc72cb66c5b6f408851e66866e72743df56.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./../assets/font/SF-Pro-Display/7c60d03415a0dafaba510d4fe6a06ff74a049450351dc9ed1a305d0f9bff90e3.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+/* CACHED: 2024-05-19T04:00:37+04:30 */
+/* Powered by FontServer.ir */
 footer {
   font-family: "Mulish", sans-serif !important;
   color: #fff;
@@ -349,7 +406,7 @@ header .drop-down02 .dropdown-toggle.nav-link:hover::after, header .drop-down02 
 }
 
 body {
-  font-family: "SF Pro Display", sans-serif;
+  font-family: "SF Pro Display";
   letter-spacing: 0.6px;
   font-size: 20px;
   line-height: 1.2;
@@ -428,6 +485,10 @@ a {
   text-decoration: none;
   color: unset;
   cursor: pointer;
+}
+
+.nav-link:focus-visible {
+  box-shadow: unset;
 }
 
 .mb_79 {
@@ -784,6 +845,71 @@ a {
   align-items: center;
 }
 
+.list-product {
+  padding-top: 48px;
+  margin-bottom: 48px;
+}
+.list-product .title {
+  margin-bottom: 50px;
+}
+.list-product .title h2 {
+  margin-bottom: 10px;
+}
+.list-product .card-title {
+  color: white;
+}
+.list-product .list-product-type .row {
+  --bs-gutter-x: 24px;
+  --bs-gutter-y: 24px;
+}
+.list-product .list-product-type .product-type-item > a {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.list-product .list-product-type .product-type-item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.list-product .list-product-type .product-type-item .card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20.5px 20px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.645) 80%);
+}
+.list-product .list-product-type .product-type-item .card-title span {
+  opacity: 0;
+  border-radius: 50%;
+  width: 35px;
+  aspect-ratio: 1/1;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.list-product .list-product-type .product-type-item .card-title span img {
+  width: 16.8px;
+  transition: all 0.3s;
+}
+.list-product .list-product-type .product-type-item .card-title span:hover {
+  background-color: #ea6f18;
+  border: 1px solid #ea6f18 !important;
+}
+.list-product .list-product-type .product-type-item:hover .card-title span {
+  opacity: 1;
+  border: 1px solid white;
+}
+
 @media only screen and (max-width: 1279.98px) {
   .container-1152 {
     padding: 0 15px;
@@ -889,7 +1015,4 @@ a {
   .list-news .main-news.item .content > div:first-child .card-title {
     margin-bottom: 10px;
   }
-}
-.nav-link:focus-visible {
-  box-shadow: unset;
 }
