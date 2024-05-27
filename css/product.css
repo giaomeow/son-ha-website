@@ -337,8 +337,16 @@
   main {
     padding-top: 121px;
   }
+  .section-banner-product .container-1152 {
+    padding: unset;
+  }
   .section-banner-product .container-1152 .banner-content {
-    width: 50%;
+    width: 100%;
+    max-width: unset;
+    padding: 30px 15px;
+  }
+  .section-banner-product .banner-content-header {
+    flex-grow: 1;
   }
   .section-statistics .list-statistics {
     grid-template-columns: repeat(2, 1fr);
@@ -350,6 +358,9 @@
 @media screen and (max-width: 767.98px) {
   main {
     padding-top: 88.45px;
+  }
+  .section-banner-product {
+    height: calc(100vh - 88.45px);
   }
   .section-statistics .list-statistics {
     grid-template-columns: repeat(1, 1fr);

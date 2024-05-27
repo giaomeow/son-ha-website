@@ -371,9 +371,15 @@
   }
   .section-banner-product {
     .container-1152 {
+      padding: unset;
       .banner-content {
-        width: 50%;
+        width: 100%;
+        max-width: unset;
+        padding: 30px 15px;
       }
+    }
+    .banner-content-header {
+      flex-grow: 1;
     }
   }
   .section-statistics {
@@ -389,6 +395,9 @@
 @media screen and (max-width: 767.98px) {
   main {
     padding-top: 88.45px;
+  }
+  .section-banner-product {
+    height: calc(100vh - 88.45px);
   }
   .section-statistics {
     .list-statistics {
