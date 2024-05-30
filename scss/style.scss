@@ -122,17 +122,14 @@ a {
     justify-content: center;
     width: calc(100% / 5);
     color: $textNormal;
-    transition: all 0.3s linear;
-    --webkit-transition: all 0.3s linear;
+    // transition: all 0.3s linear;
+    // --webkit-transition: all 0.3s linear;
     border: unset;
     border-bottom: 4px solid transparent;
     font-weight: 500;
     &.active {
       background-color: transparent;
       border-color: transparent;
-      // border-bottom: 3px solid $orangeColor;
-      // font-weight: bold;
-      // font-weight: 600;
       font-style: normal;
       color: $orangeColor;
     }

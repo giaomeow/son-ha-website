@@ -554,8 +554,6 @@ a {
   justify-content: center;
   width: 20%;
   color: #444444;
-  transition: all 0.3s linear;
-  --webkit-transition: all 0.3s linear;
   border: unset;
   border-bottom: 4px solid transparent;
   font-weight: 500;
