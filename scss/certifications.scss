@@ -3,7 +3,7 @@ h2 {
   margin-bottom: 36px;
 }
 .list-certifications {
-  margin-bottom: 37px;
+  margin-bottom: 60px;
   .logos {
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@ h2 {
       gap: 12px 24px;
       margin-bottom: 12px;
       p {
-        font-weight: bold;
+        font-weight: 600;
         color: $orangeColor;
         text-align: center;
         line-height: 36px;
@@ -52,7 +52,7 @@ h2 {
     margin-bottom: 20px;
   }
   .list-certifications {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
     .logos {
       margin-bottom: 20px;
       .item {

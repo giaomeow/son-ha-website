@@ -64,7 +64,7 @@
 .market-report .carousel .slider-for .item .content p {
   margin-bottom: 24px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 200;
   text-align: justify;
 }
 .market-report .carousel .slider-for .item .download {
@@ -119,8 +119,9 @@
   transition: all 0.3s;
 }
 .market-report .carousel .slider-for .item .download a:last-child {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  -webkit-text-decoration: underline solid white 0.5px;
+          text-decoration: underline solid white 0.5px;
+  font-weight: 600;
 }
 .market-report .carousel .button-slider {
   position: absolute;

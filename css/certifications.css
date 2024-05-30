@@ -3,7 +3,7 @@ h2 {
 }
 
 .list-certifications {
-  margin-bottom: 37px;
+  margin-bottom: 60px;
 }
 .list-certifications .logos {
   display: flex;
@@ -33,7 +33,7 @@ h2 {
   margin-bottom: 12px;
 }
 .list-certifications .list-text .list-1 p {
-  font-weight: bold;
+  font-weight: 600;
   color: #ea6f18;
   text-align: center;
   line-height: 36px;
@@ -51,7 +51,7 @@ h2 {
     margin-bottom: 20px;
   }
   .list-certifications {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
   .list-certifications .logos {
     margin-bottom: 20px;

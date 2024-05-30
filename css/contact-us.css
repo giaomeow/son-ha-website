@@ -1,7 +1,8 @@
 .title {
   margin-bottom: 24px;
 }
-.title h1 {
+.title h1,
+.title h2 {
   margin-bottom: 12px;
 }
 
@@ -33,7 +34,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3764705882);
+  background: rgba(0, 0, 0, 0.65);
 }
 .contact-template .list-contact-info h2 {
   color: #fff !important;
@@ -51,7 +52,9 @@
 .contact-template .list-contact-info .contact-info .item {
   display: flex;
   gap: 25px;
-  font-weight: light;
+}
+.contact-template .list-contact-info .contact-info .item p {
+  font-weight: 300;
 }
 .contact-template .list-contact-form {
   flex-grow: 1;
@@ -75,7 +78,8 @@
   gap: 6px;
   font-size: 16px;
 }
-.contact-template .list-contact-form .title-form h1 {
+.contact-template .list-contact-form .title-form h1,
+.contact-template .list-contact-form .title-form h2 {
   color: #444444;
 }
 .contact-template .list-contact-form .row {

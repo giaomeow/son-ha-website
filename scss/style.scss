@@ -177,9 +177,9 @@ a {
       padding: 10px 0;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
-      font-weight: lighter;
+      font-weight: 200;
       font-size: 12px;
-      color: #606060;
+      color: black;
       &:hover {
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
       }
@@ -252,7 +252,8 @@ a {
           font-size: 16px;
         }
         .footer-item {
-          a {
+          a,
+          span {
             @include a-link-arrow(30px, 14.4px, $textNormal50);
           }
         }
@@ -296,7 +297,8 @@ a {
       }
       .footer-item {
         width: 100%;
-        a {
+        a,
+        span {
           @include a-link-arrow(20px, 9.6px, $textNormal50);
           &:hover {
             @include hover-a;
@@ -337,7 +339,8 @@ a {
       }
       .content {
         .footer-item {
-          a {
+          a,
+          span {
             svg {
               transform: rotate(180deg);
             }
@@ -493,7 +496,8 @@ a {
   .list-news {
     .footer-item {
       .links {
-        a {
+        a,
+        span {
           transform: rotate(180deg);
         }
       }
