@@ -250,6 +250,21 @@
     right: -48px;
     left: unset;
   }
+  .slick-dots li button:before {
+    width: 50px;
+    height: 5px;
+    content: "";
+    background-color: $orangeColor;
+  }
+  .slick-dots li button {
+    width: 50px;
+    height: 5px;
+    padding: 0;
+  }
+  .slick-dots li {
+    width: max-content;
+    height: max-content;
+  }
 }
 //=================  SECTION STATISTICS =================
 .section-statistics {
@@ -364,7 +379,6 @@
     }
   }
 }
-
 @media screen and (max-width: 1023.98px) {
   main {
     padding-top: 121px;
@@ -391,7 +405,6 @@
     }
   }
 }
-
 @media screen and (max-width: 767.98px) {
   main {
     padding-top: 88.45px;

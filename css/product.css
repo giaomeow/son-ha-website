@@ -231,6 +231,23 @@
   right: -48px;
   left: unset;
 }
+.section-range-of-product .slick-dots li button:before {
+  width: 50px;
+  height: 5px;
+  content: "";
+  background-color: #ea6f18;
+}
+.section-range-of-product .slick-dots li button {
+  width: 50px;
+  height: 5px;
+  padding: 0;
+}
+.section-range-of-product .slick-dots li {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
 
 .section-statistics {
   padding-top: 36px;

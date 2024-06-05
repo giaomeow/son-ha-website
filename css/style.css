@@ -437,6 +437,12 @@ li {
   margin: 0 auto;
 }
 
+.container-952 {
+  width: 100%;
+  max-width: 952px;
+  margin: 0 auto;
+}
+
 main {
   padding-top: 105px;
   overflow-x: hidden;
@@ -449,7 +455,8 @@ h2.heading1 {
   color: #ea6f18;
 }
 
-h2 {
+h2,
+.heading2 {
   font-weight: 600;
   font-size: 32px;
   color: #ea6f18;
@@ -495,12 +502,28 @@ a {
   margin-bottom: 79px;
 }
 
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-6 {
+  margin-bottom: 6px;
+}
+
 .pt-24 {
   padding-top: 24px;
 }
 
 .pb-24 {
   padding-bottom: 24px;
+}
+
+.pt-36 {
+  padding-top: 36px;
+}
+
+.pb-36 {
+  padding-bottom: 36px;
 }
 
 .pt-48 {
@@ -513,6 +536,18 @@ a {
 
 .mb-24 {
   margin-bottom: 24px;
+}
+
+.w-740 {
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.w-564 {
+  width: 100%;
+  max-width: 564px;
+  margin: 0 auto;
 }
 
 .btn-brand-color {
@@ -915,6 +950,24 @@ a {
 .list-product .list-product-type .product-type-item:hover .card-title span {
   opacity: 1;
   border: 1px solid white;
+}
+
+.section-rounded-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.section-rounded-content .img {
+  width: 270px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.section-rounded-content .content {
+  flex-grow: 1;
+}
+.section-rounded-content .content h4 {
+  color: #ea6f18;
 }
 
 @media only screen and (max-width: 1279.98px) {

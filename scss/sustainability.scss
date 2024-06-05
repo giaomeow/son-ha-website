@@ -1,0 +1,222 @@
+@import "./variable";
+.section-banner {
+  .content {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+.page-title {
+  text-align: center;
+  h1 {
+    text-transform: uppercase;
+  }
+}
+.number-text {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  .number {
+    min-width: 64px;
+  }
+  .text {
+    flex-grow: 1;
+  }
+}
+.section-haft-haft {
+  padding: 36px 0;
+  .haft-text {
+    gap: 24px;
+  }
+}
+.section-page-introduction {
+  .row {
+    --bs-gutter-x: 0;
+  }
+  .time-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    .middle-line {
+      flex-grow: 1;
+      position: relative;
+      .line {
+        height: 2px;
+        width: 100%;
+        background-color: $orangeColor;
+        position: absolute;
+        top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $orangeColor;
+        }
+      }
+    }
+    .item {
+      width: 172px;
+      text-align: center;
+      .heading2 {
+        margin-bottom: 6px;
+      }
+    }
+  }
+  .section-infrastructure-demands {
+    padding: 0;
+  }
+}
+.section-tabs {
+  .row {
+    --bs-gutter-x: 0;
+    .item {
+      text-align: center;
+      font-weight: 600;
+      padding: 9px;
+      border: 1px solid $orangeColor;
+      position: relative;
+      cursor: pointer;
+      border-radius: 2px;
+      overflow: hidden;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: $orangeColor;
+      }
+      &:not(.active):hover::after {
+        height: 3px;
+      }
+      &.active {
+        background-color: $orangeColor;
+        color: #fff;
+      }
+    }
+  }
+}
+.section-organic-certifications {
+  h2 {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .list-certifications {
+    width: 100%;
+    max-width: 760px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0 auto;
+    .item {
+      width: 50%;
+      max-width: 270px;
+      .img {
+        filter: grayscale(1);
+        border: 1px solid #adadad;
+        img {
+          width: 100%;
+        }
+        &:hover {
+          filter: unset;
+          border: 1px solid $orangeColor;
+        }
+      }
+      p {
+        margin-top: 6px;
+        text-align: center;
+        padding: 12px 0;
+      }
+    }
+  }
+  .list-data {
+    .title {
+      font-weight: 600;
+    }
+    h2 {
+      text-align: unset;
+      margin-bottom: 6px;
+    }
+    .row {
+      .col-lg-6 {
+        &:first-child {
+          .number-text .number {
+            width: 100px;
+          }
+        }
+        &:last-child {
+          .number-text .number {
+            width: 165px;
+          }
+        }
+      }
+    }
+  }
+}
+.section-fostering-hope {
+  .number-text {
+    margin-top: 6px;
+    .number {
+      width: 20%;
+      flex-shrink: 0;
+    }
+  }
+}
+.section-valuing-human {
+  .list-data {
+    > p {
+      margin-bottom: 6px;
+    }
+  }
+  .list-training-forest {
+    display: flex;
+    justify-content: space-between;
+    gap: 24.5px;
+    .number-text {
+      .number {
+        min-width: unset;
+        width: max-content;
+      }
+      &:nth-child(2) {
+        .text {
+          width: max-content;
+        }
+      }
+    }
+  }
+  .list-livelihood-support {
+    .number-text {
+      padding: 6px 0;
+      .number {
+        min-width: unset;
+        width: max-content;
+      }
+    }
+  }
+}
+.section-honoring-biodiversity {
+  .action-plan {
+    > p {
+      margin-bottom: 6px;
+    }
+    .list-action-plan {
+      .number-text {
+        .number {
+          min-width: unset;
+          width: max-content;
+        }
+      }
+    }
+  }
+}
+.section-fostering-culture {
+  .haft-text {
+    .title {
+      font-weight: 600;
+      color: $orangeColor;
+    }
+  }
+}

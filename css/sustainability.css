@@ -1,0 +1,193 @@
+.section-banner .content {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.page-title {
+  text-align: center;
+}
+.page-title h1 {
+  text-transform: uppercase;
+}
+
+.number-text {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.number-text .number {
+  min-width: 64px;
+}
+.number-text .text {
+  flex-grow: 1;
+}
+
+.section-haft-haft {
+  padding: 36px 0;
+}
+.section-haft-haft .haft-text {
+  gap: 24px;
+}
+
+.section-page-introduction .row {
+  --bs-gutter-x: 0;
+}
+.section-page-introduction .time-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.section-page-introduction .time-line .middle-line {
+  flex-grow: 1;
+  position: relative;
+}
+.section-page-introduction .time-line .middle-line .line {
+  height: 2px;
+  width: 100%;
+  background-color: #ea6f18;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-page-introduction .time-line .middle-line .line .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ea6f18;
+}
+.section-page-introduction .time-line .item {
+  width: 172px;
+  text-align: center;
+}
+.section-page-introduction .time-line .item .heading2 {
+  margin-bottom: 6px;
+}
+.section-page-introduction .section-infrastructure-demands {
+  padding: 0;
+}
+
+.section-tabs .row {
+  --bs-gutter-x: 0;
+}
+.section-tabs .row .item {
+  text-align: center;
+  font-weight: 600;
+  padding: 9px;
+  border: 1px solid #ea6f18;
+  position: relative;
+  cursor: pointer;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.section-tabs .row .item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #ea6f18;
+}
+.section-tabs .row .item:not(.active):hover::after {
+  height: 3px;
+}
+.section-tabs .row .item.active {
+  background-color: #ea6f18;
+  color: #fff;
+}
+
+.section-organic-certifications h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.section-organic-certifications .list-certifications {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0 auto;
+}
+.section-organic-certifications .list-certifications .item {
+  width: 50%;
+  max-width: 270px;
+}
+.section-organic-certifications .list-certifications .item .img {
+  filter: grayscale(1);
+  border: 1px solid #adadad;
+}
+.section-organic-certifications .list-certifications .item .img img {
+  width: 100%;
+}
+.section-organic-certifications .list-certifications .item .img:hover {
+  filter: unset;
+  border: 1px solid #ea6f18;
+}
+.section-organic-certifications .list-certifications .item p {
+  margin-top: 6px;
+  text-align: center;
+  padding: 12px 0;
+}
+.section-organic-certifications .list-data .title {
+  font-weight: 600;
+}
+.section-organic-certifications .list-data h2 {
+  text-align: unset;
+  margin-bottom: 6px;
+}
+.section-organic-certifications .list-data .row .col-lg-6:first-child .number-text .number {
+  width: 100px;
+}
+.section-organic-certifications .list-data .row .col-lg-6:last-child .number-text .number {
+  width: 165px;
+}
+
+.section-fostering-hope .number-text {
+  margin-top: 6px;
+}
+.section-fostering-hope .number-text .number {
+  width: 20%;
+  flex-shrink: 0;
+}
+
+.section-valuing-human .list-data > p {
+  margin-bottom: 6px;
+}
+.section-valuing-human .list-training-forest {
+  display: flex;
+  justify-content: space-between;
+  gap: 24.5px;
+}
+.section-valuing-human .list-training-forest .number-text .number {
+  min-width: unset;
+  width: -moz-max-content;
+  width: max-content;
+}
+.section-valuing-human .list-training-forest .number-text:nth-child(2) .text {
+  width: -moz-max-content;
+  width: max-content;
+}
+.section-valuing-human .list-livelihood-support .number-text {
+  padding: 6px 0;
+}
+.section-valuing-human .list-livelihood-support .number-text .number {
+  min-width: unset;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.section-honoring-biodiversity .action-plan > p {
+  margin-bottom: 6px;
+}
+.section-honoring-biodiversity .action-plan .list-action-plan .number-text .number {
+  min-width: unset;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.section-fostering-culture .haft-text .title {
+  font-weight: 600;
+  color: #ea6f18;
+}
