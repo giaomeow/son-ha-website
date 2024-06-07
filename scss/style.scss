@@ -523,15 +523,18 @@ a {
     flex-grow: 1;
     h4 {
       color: $orangeColor;
+      margin-bottom: 6px;
     }
   }
 }
 //=================  RESPONSIVE =================
 @media only screen and (max-width: 1279.98px) {
   //=================  Container =================
-  .container-1152 {
+  .container-1152,
+  .container-952 {
     padding: 0 15px;
   }
+
   //=================  List news =================
   .list-news {
     .footer-item {

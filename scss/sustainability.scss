@@ -26,6 +26,12 @@
   padding: 36px 0;
   .haft-text {
     gap: 24px;
+    ul {
+      padding-left: 29px;
+      li {
+        padding-left: 3px;
+      }
+    }
   }
 }
 .section-page-introduction {
@@ -80,6 +86,10 @@
       cursor: pointer;
       border-radius: 2px;
       overflow: hidden;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       &::after {
         content: "";
         position: absolute;
@@ -101,7 +111,6 @@
 }
 .section-organic-certifications {
   h2 {
-    margin-bottom: 24px;
     text-align: center;
   }
   .list-certifications {
@@ -218,5 +227,84 @@
       font-weight: 600;
       color: $orangeColor;
     }
+  }
+}
+.section-mitigating-socioeconomic {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.row.section-nurturing-environmental {
+  --bs-gutter-x: 24px;
+}
+
+@media only screen and (max-width: 1023.98px) {
+  .section-nurturing-environmental {
+    .haft-text {
+      margin-bottom: 24px;
+    }
+  }
+  .section-organic-certifications {
+    .list-certifications {
+      .item {
+        max-width: unset;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .section-haft-haft,
+  .section-haft-haft .haft-text {
+    gap: 12px;
+  }
+  h2.mb-24,
+  h3.mb-24 {
+    margin-bottom: 12px;
+    padding: 0;
+  }
+  .section-rounded-content {
+    flex-direction: column;
+    gap: 12px;
+    .img {
+      width: 200px;
+    }
+    .content {
+      h4 {
+        text-align: center;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .section-nurturing-environmental,
+  .section-mitigating-socioeconomic {
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .section-organic-certifications
+    .list-data
+    .row
+    .col-lg-6:last-child
+    .number-text
+    .number,
+  .section-organic-certifications
+    .list-data
+    .row
+    .col-lg-6:first-child
+    .number-text
+    .number {
+    width: 165px;
+    flex-shrink: 0;
+  }
+  .section-valuing-human .list-training-forest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .section-page-introduction .time-line .item {
+    width: 40%;
   }
 }

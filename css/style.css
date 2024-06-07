@@ -968,10 +968,12 @@ a {
 }
 .section-rounded-content .content h4 {
   color: #ea6f18;
+  margin-bottom: 6px;
 }
 
 @media only screen and (max-width: 1279.98px) {
-  .container-1152 {
+  .container-1152,
+  .container-952 {
     padding: 0 15px;
   }
   .list-news .footer-item .links a,
