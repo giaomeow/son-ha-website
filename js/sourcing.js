@@ -404,7 +404,8 @@ $(document).ready(function () {
       }
     } else {
       if (tabsListItemActive.length > 1) {
-        mapImg.querySelector("img").src = "./assets/img/sourcing-page/map.png";
+        mapImg.querySelector("img").src =
+          "./../assets/img/sourcing-page/map.png";
       }
       // TH Khi chỉ có cassia active
       else if (
@@ -412,7 +413,7 @@ $(document).ready(function () {
         cassiaMap.classList.contains("active")
       ) {
         mapImg.querySelector("img").src =
-          "./assets/img/sourcing-page/cassia-map.png";
+          "./../assets/img/sourcing-page/cassia-map.png";
       }
       // TH Khi chỉ có cassiaAndStar active
       else if (
@@ -420,17 +421,17 @@ $(document).ready(function () {
         cassiaAndStarMap.classList.contains("active")
       ) {
         mapImg.querySelector("img").src =
-          "./assets/img/sourcing-page/cassia-and-star-map.png";
+          "./../assets/img/sourcing-page/cassia-and-star-map.png";
       } // TH Khi chỉ có pepper active
       else if (
         tabsListItemActive.length === 1 &&
         pepperMap.classList.contains("active")
       ) {
         mapImg.querySelector("img").src =
-          "./assets/img/sourcing-page/pepper.png";
+          "./../assets/img/sourcing-page/pepper.png";
       } else {
         mapImg.querySelector("img").src =
-          "./assets/img/sourcing-page/star-map.png";
+          "./../assets/img/sourcing-page/star-map.png";
       }
     }
   }

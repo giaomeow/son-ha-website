@@ -3,6 +3,7 @@
 }
 .section-quality-team .section-haft-haft .haft-text {
   width: 43.5%;
+  max-width: 466px;
   gap: 0;
 }
 .section-quality-team .section-haft-haft .haft-text h1,
@@ -23,6 +24,10 @@
 }
 .section-quality-assurance .section-haft-haft .haft-haft-part .haft-part:last-child .list-img {
   gap: 6px;
+}
+
+.section-quality-control .section-haft-haft .haft-haft-part .haft-part p {
+  font-weight: 200;
 }
 
 .list-guarantees {

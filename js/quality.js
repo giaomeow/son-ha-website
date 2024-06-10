@@ -2,7 +2,7 @@ $(document).ready(function () {
   // Laboratory Carousel
   $(".section-laboratory-carousel").slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     fade: true,
     cssEase: "ease",

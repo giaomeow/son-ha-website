@@ -1,17 +1,17 @@
 .section-table-crop h2 {
   margin-bottom: 12px;
 }
-.section-table-crop .tab-style.tabs-content {
-  transition: all 5s linear;
-}
 .section-table-crop .tab-style.tabs-content .nav-link {
   width: 33.3333333333%;
 }
 .section-table-crop .tab-style.tabs-content .tab-content {
   padding-bottom: 0;
-  transition: all 5s linear;
   height: -moz-max-content;
   height: max-content;
+  overflow: scroll;
+}
+.section-table-crop .tab-style.tabs-content .tab-content > .tab-pane {
+  min-width: 700px;
 }
 
 .section-raw-material {

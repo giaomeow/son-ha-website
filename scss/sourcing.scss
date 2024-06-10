@@ -4,14 +4,16 @@
     margin-bottom: 12px;
   }
   .tab-style.tabs-content {
-    transition: all 5s linear;
     .nav-link {
       width: calc(100% / 3);
     }
     .tab-content {
       padding-bottom: 0;
-      transition: all 5s linear;
       height: max-content;
+      overflow: scroll;
+      > .tab-pane {
+        min-width: 700px;
+      }
     }
   }
 }
@@ -129,109 +131,6 @@
           }
         }
       }
-      // .item-site {
-      //   &#name1 {
-      //     top: 6%;
-      //     left: 6.5%;
-      //     .line {
-      //       width: 133px;
-      //       top: 23%;
-      //     }
-      //   }
-      //   &#name2 {
-      //     top: 24%;
-      //     left: 9.5%;
-      //     .line {
-      //       width: 119.2px;
-      //       top: -24%;
-      //       transform: translateX(100%) rotate(-44deg);
-      //       &.right {
-      //         right: 9%;
-      //       }
-      //     }
-      //   }
-      //   &#name3 {
-      //     top: 42%;
-      //     left: 14.5%;
-      //     .line {
-      //       width: 177.2px;
-      //       top: -80%;
-      //       transform: translateX(100%) rotate(-69deg);
-      //       &.right {
-      //         right: 31%;
-      //       }
-      //     }
-      //   }
-      //   &#name4 {
-      //     top: 59.5%;
-      //     left: 20.5%;
-      //     .line {
-      //       width: 186.2px;
-      //       top: -122%;
-      //       transform: translateX(100%) rotate(-69deg);
-      //       &.right {
-      //         right: 48%;
-      //       }
-      //     }
-      //   }
-      //   &#name5 {
-      //     top: 78%;
-      //     left: 18%;
-      //     .line {
-      //       width: 213.2px;
-      //       top: -72%;
-      //       transform: translateX(100%) rotate(-49deg);
-      //       &.right {
-      //         right: 20%;
-      //       }
-      //     }
-      //   }
-      //   &#name6 {
-      //     top: 6%;
-      //     right: 8%;
-      //     .line {
-      //       width: 165.2px;
-      //       transform: translateX(-100%) rotate(-4deg);
-      //       top: 37%;
-      //     }
-      //   }
-      //   &#name7 {
-      //     top: 24%;
-      //     right: 4%;
-      //     .line {
-      //       width: 206.2px;
-      //       transform: translateX(-100%) rotate(15deg);
-      //       top: -12%;
-      //       &.left {
-      //         left: 2%;
-      //       }
-      //     }
-      //   }
-      //   &#name8 {
-      //     top: 42%;
-      //     right: 6.5%;
-      //     .line {
-      //       width: 218.2px;
-      //       transform: translateX(-100%) rotate(39deg);
-      //       top: -51%;
-      //       &.left {
-      //         left: 13%;
-      //       }
-      //     }
-      //   }
-      //   &#name9 {
-      //     top: 63%;
-      //     right: 9%;
-      //     .line {
-      //       width: 69px;
-      //       transform: translateX(-100%) rotate(50deg);
-      //       top: -15%;
-      //       &.left {
-      //         left: 7%;
-      //       }
-      //     }
-      //   }
-      // }
       &[mapData="cassia"] {
         .item-site {
           &#name1 {

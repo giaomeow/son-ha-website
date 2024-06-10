@@ -4,6 +4,7 @@
     padding: 0;
     .haft-text {
       width: 43.5%;
+      max-width: 466px;
       gap: 0;
       h1,
       p {
@@ -32,6 +33,11 @@
         }
       }
     }
+  }
+}
+.section-quality-control {
+  .section-haft-haft .haft-haft-part .haft-part p {
+    font-weight: 200;
   }
 }
 
