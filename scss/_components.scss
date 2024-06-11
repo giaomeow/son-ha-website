@@ -61,6 +61,9 @@ footer {
           text-underline-offset: 1px;
           font-weight: 200;
           text-wrap: nowrap;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
     }

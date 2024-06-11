@@ -118,6 +118,9 @@ footer .info-content .links ul a {
   text-underline-offset: 1px;
   font-weight: 200;
   text-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 header {
@@ -413,6 +416,7 @@ body {
   font-weight: 400;
   color: #444444;
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 h1,
