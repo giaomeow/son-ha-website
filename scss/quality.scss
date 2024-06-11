@@ -279,4 +279,7 @@
   .list-img-guarantees {
     grid-template-columns: repeat(4, 1fr);
   }
+  .list-guarantees .item {
+    gap: 20px;
+  }
 }

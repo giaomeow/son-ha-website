@@ -1078,4 +1078,7 @@ a {
   .list-news .main-news.item .content > div:first-child .card-title {
     margin-bottom: 10px;
   }
+  .section-haft-haft .haft-haft-part .haft-part p {
+    font-size: 14px;
+  }
 }
